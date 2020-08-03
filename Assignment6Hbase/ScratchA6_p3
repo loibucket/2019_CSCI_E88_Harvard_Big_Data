@@ -1,0 +1,72 @@
+Yes, if you run the hbase locally, you need to run /bin/hbase thrift start command to be able to use happybase. 
+You don't need to do it in EMR cluster.
+
+hbase-daemon.sh start thrift
+
+./bin/hbase-daemon.sh start thrift
+./bin/hbase-daemon.sh stop thrift
+
+./bin/start-hbase.sh
+./bin/stop-hbase.sh
+./bin/hbase shell
+
+conn = happybase.Connection(host = "172.31.18.179",table_prefix = "lab", table_prefix_separator = ":")
+
+Run Python spark job
+
+spark-submit --packages com.hortonworks:shc-core:1.1.1-2.1-s_2.11 --repositories http://repo.hortonworks.com/content/repositories/releases/ hw6_problem3_q2.py
+
+spark-submit --packages com.hortonworks:shc-core:1.1.1-2.1-s_2.11 --repositories http://repo.hortonworks.com/content/repositories/releases/ hbase_spark_demo.py
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-3-14-249-237.us-east-2.compute.amazonaws.com
+
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-3-14-249-237.us-east-2.compute.amazonaws.com:.
+
+spark-submit hw6_problem3_q2happybase.py
+
+spark-submit --packages com.hortonworks:shc-core:1.1.1-2.1-s_2.11 --repositories http://repo.hortonworks.com/content/repositories/releases/ hw6_problem5.py
+
+get 'query2', '2019-09-12:02:http://example.com/?url=003'
+get 'query2', '2019-09-12:02:http://example.com/?url=004'
+get 'query2', '2019-09-12:02:http://example.com/?url=005'
+get 'query2', '2019-09-12:02:http://example.com/?url=006'
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-18-188-221-119.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-18-188-221-119.us-east-2.compute.amazonaws.com:.
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-18-218-185-86.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-18-218-185-86.us-east-2.compute.amazonaws.com:.
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-18-218-115-132.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-18-218-115-132.us-east-2.compute.amazonaws.com:.
+
+pyspark --packages com.hortonworks:shc-core:1.1.1-1.6-s_2.10 --repositories http://repo.hortonworks.com/content/groups/public/ --files /etc/hbase/conf.cloudera.hbase/hbase-site.xml
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-18-189-182-77.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-18-189-182-77.us-east-2.compute.amazonaws.com:.
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-18-189-186-97.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-18-189-186-97.us-east-2.compute.amazonaws.com:.
+
+spark-submit --master yarn --packages com.hortonworks:shc-core:1.1.1-2.1-s_2.11 --repositories http://repo.hortonworks.com/content/repositories/releases/ hw6_problem3_q2.py
+spark-submit --master yarn --packages com.hortonworks:shc-core:1.1.1-2.1-s_2.11 --repositories http://repo.hortonworks.com/content/repositories/releases/ hw6_problem5.py
+spark-submit --master yarn hw6_problem3_q2happybase.py
+
+spark-submit --master yarn --packages com.hortonworks:shc-core:1.1.1-2.1-s_2.11 --repositories http://repo.hortonworks.com/content/repositories/releases/ HoursCounterSparkHbase_mod.py
+
+spark-submit --master yarn --conf spark.hbase.host=172.31.2.29 --packages com.hortonworks:shc-core:1.1.1-2.1-s_2.11 --repositories http://repo.hortonworks.com/content/repositories/releases/ HoursCounterSparkHbase_mod.py
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-3-15-26-0.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-3-15-26-0.us-east-2.compute.amazonaws.com:.
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-3-17-156-180.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-3-17-156-180.us-east-2.compute.amazonaws.com:.
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-18-222-112-147.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-18-222-112-147.us-east-2.compute.amazonaws.com:.
+
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-18-189-180-7.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-18-189-180-7.us-east-2.compute.amazonaws.com:.
+
+spark-submit --master yarn --packages com.hortonworks:shc-core:1.1.1-2.1-s_2.11 --repositories http://repo.hortonworks.com/content/repositories/releases/ --files /etc/hbase/conf/hbase-site.xml hbase_spark_demo.py
+spark-submit --master yarn --packages com.hortonworks:shc:1.1.1-2.1-s_2.11 --repositories http://repo.hortonworks.com/content/repositories/releases/ --files /etc/hbase/conf/hbase-site.xml hbase_spark_demo.py

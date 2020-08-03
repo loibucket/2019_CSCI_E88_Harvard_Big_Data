@@ -1,0 +1,8 @@
+version: '3.5'
+
+services:
+  flume16:
+    image: cloudera/quickstart
+    volumes:
+      - "./docker_share:/docker_share"
+    command: 'sleep 5000'

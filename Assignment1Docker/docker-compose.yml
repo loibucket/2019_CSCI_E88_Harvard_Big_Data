@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  redis_server:
+    image: redis
+
+  redis_clientone:
+    image: redis
+
+  redis_clienttwo:
+    image: redis
+
+  postgres_server:
+    image: postgres
+    ports:
+      - "5432:5432"

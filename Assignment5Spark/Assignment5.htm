@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html class="scripts-not-loaded" dir="ltr"   lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&amp;subset=latin-ext&amp;display=swap" rel="stylesheet">
+    <script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  <script>
+//<![CDATA[
+
+!function(){
+  function get(u){document.write('<scr'+'ipt src="'+ u +'"></sc'+'ript>')}
+  var o,s,v;
+  if (!(window.Promise && Object.assign && Object.values && [].find && [].includes && (o={},s=Symbol(),v={},o[s]=v,o[s]===v) && (function f(){}).bind().name==='bound f')) {
+    get("https://du11hjcvx0uqb.cloudfront.net/br/dist/ie11-polyfill-5cf07f7aab.js");
+  }
+  if (!window.fetch) get("https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js");
+}();
+      
+//]]>
+</script>
+  <script>window.fetchIgnoredByNewRelic = window.fetch</script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/favicon-e10d657a73.ico" />
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/apple-touch-icon-585e5d997d.png" />
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/df1a85bafcff919b731c968e5d6694f6/variables-8391c84da435c9cfceea2b2b3317ff66.css" />
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/common-66a59d4074.css" />
+  <meta name="apple-itunes-app" content="app-id=480883488" />
+<link rel="manifest" href="/web-app-manifest/manifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#008EE2">
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/assignments-f5bc12342d.css" />
+<link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/tinymce-0c01433900.css" />
+<link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/learning_outcomes-cbba6e8c1e.css" />
+  <link rel="stylesheet" media="all" href="https://instructure-uploads.s3.amazonaws.com/account_18750000000000001/attachments/8491881/theme.min.css" />
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          e.preventDefault()
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/df1a85bafcff919b731c968e5d6694f6/variables-8391c84da435c9cfceea2b2b3317ff66.js" defer="defer"></script>
+
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/America/New_York-c3226761e3.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/America/New_York-c3226761e3.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/en_US-80a0ce259b.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/main-e-f93e59825d.js" as="script" type="text/javascript"><script src="https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/America/New_York-c3226761e3.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/en_US-80a0ce259b.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/main-e-f93e59825d.js" defer="defer"></script><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/0-c-4837c5a41d.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/1-c-7587397ec6.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/2-c-53f484e9bd.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/3-c-fd06b80d25.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/4-c-0719fbe7db.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/5-c-45937b1521.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/6-c-9b61efba0a.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/7-c-a123c08b0f.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/8-c-7298c2ecee.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/9-c-604dd4c4c0.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/10-c-29d3d962bc.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/19-c-1ac8277b35.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/18-c-c38bcd9143.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/23-c-49e1d07b7b.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/30-c-9125fd65c2.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/36-c-19b83490ee.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/44-c-5e775f9bfa.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/61-c-2ad0fd1ba9.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/57-c-0bf80d7a4a.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/71-c-439b8856fc.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/109-c-3746eb0af0.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/assignment_show-c-94382e87fb.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/12-c-4e9c1b7e6b.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/13-c-4e65130e00.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/16-c-f0f0a2ed6d.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/17-c-507ee95c63.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/20-c-c1308ccf89.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/26-c-783c05f1b3.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/35-c-16afad3d9a.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/37-c-3f19594ebd.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/100-c-afba7b3e59.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/108-c-456b7e3e62.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/137-c-d7566a2551.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/134-c-6efdab1310.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/submit_assignment-c-be55fc49fd.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/11-c-a01ecddb30.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/14-c-773e6f56ca.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/24-c-f2df29534b.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/29-c-fe1e9bfe5e.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/31-c-39a94df20b.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/34-c-4cff2f46dc.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/48-c-17a96d1347.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/50-c-01ff077a53.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/64-c-a74dd81e6b.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/73-c-a4b04f9367.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/95-c-76c740d14e.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/113-c-dca4d5d8cb.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/edit_rubric-c-ffcbb7e0e3.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/221-c-759df67868.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/navigation_header-c-51c8a6c742.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('assignment_show');
+(window.bundles || (window.bundles = [])).push('submit_assignment');
+(window.bundles || (window.bundles = [])).push('edit_rubric');
+(window.bundles || (window.bundles = [])).push('navigation_header');
+//]]>
+</script>
+  <title>Assignment5</title>
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', "UA-9138420-1", 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+<body class="with-left-side course-menu-expanded with-right-side assignments primary-nav-expanded context-course_63150">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder"></div>
+
+<div id="application" class="ic-app">
+  
+  <header id="header" class="ic-app-header no-print ">
+    <a href="#content" id="skip_navigation_link">Skip To Content</a>
+      <div role="region" class="ic-app-header__main-navigation" aria-label="Global Navigation">
+        <div class="ic-app-header__logomark-container">
+          <a href="https://canvas.harvard.edu/" class="ic-app-header__logomark">
+            <span class="screenreader-only">Dashboard</span>
+          </a>
+        </div>
+        <ul id="menu" class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_profile_link" role="button" href="/profile" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <div class="ic-avatar ">
+                    <img src="https://canvas.harvard.edu/images/thumbnails/8397243/cnySfmEmPO1aXpIAlBh3NpPUG20CsJfGxTjZC8oU" alt="Loi Cheng" />
+                  </div>
+                </div>
+                <div class="menu-item__text">
+                  Account
+                </div>
+              </a>
+            </li>
+          <li class="ic-app-header__menu-list-item ">
+            <a id="global_nav_dashboard_link" href="https://canvas.harvard.edu/" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z" /></svg>
+
+              </div>
+              <div class="menu-item__text">Dashboard</div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+            <a id="global_nav_courses_link" role="button" href="/courses" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Courses
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_calendar_link" href="/calendar" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Calendar
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_conversations_link" href="/conversations" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container">
+                <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"/></svg>
+</span>
+                <span class="menu-item__badge" style="display: none">0</span>
+              </div>
+              <div class="menu-item__text">
+                Inbox
+              </div>
+            </a>
+          </li>
+            
+
+
+          <li class="ic-app-header__menu-list-item">
+           <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+              <div class="menu-item-icon-container" role="presentation">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-help" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100,127.88A11.15,11.15,0,1,0,111.16,139,11.16,11.16,0,0,0,100,127.88Zm8.82-88.08a33.19,33.19,0,0,1,23.5,23.5,33.54,33.54,0,0,1-24,41.23,3.4,3.4,0,0,0-2.74,3.15v9.06H94.42v-9.06a14.57,14.57,0,0,1,11.13-14,22.43,22.43,0,0,0,13.66-10.27,22.73,22.73,0,0,0,2.31-17.37A21.92,21.92,0,0,0,106,50.59a22.67,22.67,0,0,0-19.68,3.88,22.18,22.18,0,0,0-8.65,17.64H66.54a33.25,33.25,0,0,1,13-26.47A33.72,33.72,0,0,1,108.82,39.8ZM100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65" transform="translate(-5.2 -5.2)"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Help
+              </div>
+</a>          </li>
+        </ul>
+      </div>
+      <div class="ic-app-header__secondary-navigation">
+        <ul class="ic-app-header__menu-list">
+          <li class="menu-item ic-app-header__menu-list-item">
+            <button
+              id="primaryNavToggle"
+              class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle"
+              aria-label="Minimize global navigation"
+              title="Minimize global navigation"
+            >
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"/>
+</svg>
+
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    <div id="global_nav_tray_container"></div>
+  </header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide Courses Navigation Menu" title="Hide Courses Navigation Menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+          <div class="ic-app-crumbs">
+        <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="/"><span class="ellipsible">      <i class="icon-home"
+         title="My Dashboard">
+        <span class="screenreader-only">My Dashboard</span>
+      </i>
+</span></a></li><li><a href="/courses/63150"><span class="ellipsible">CSCI E-88 (15417)</span></a></li><li><a href="/courses/63150/assignments"><span class="ellipsible">Assignments</span></a></li><li><a href="https://canvas.harvard.edu/courses/63150/assignments/296810"><span class="ellipsible">Assignment5</span></a></li></ul></nav>
+        </div>
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side"
+          class="ic-app-course-menu list-view"
+          style="display: block"
+          >
+              <span id="section-tabs-header-subtitle" class="ellipsis">2019-2020 Fall</span>
+            <nav role="navigation" aria-label="Courses Navigation Menu"><ul id="section-tabs"><li class="section"><a href="/courses/63150" title="Home" class="home">Home</a></li><li class="section"><a href="/courses/63150/announcements" title="Announcements" class="announcements">Announcements</a></li><li class="section"><a href="/courses/63150/assignments" title="Assignments" class="assignments active">Assignments</a></li><li class="section"><a href="/courses/63150/external_tools/53788" title="Lecture Video" class="context_external_tool_53788">Lecture Video</a></li><li class="section"><a href="/courses/63150/external_tools/52902" title="Piazza" class="context_external_tool_52902">Piazza</a></li><li class="section"><a href="/courses/63150/assignments/syllabus" title="Syllabus" class="syllabus">Syllabus</a></li><li class="section"><a href="/courses/63150/quizzes" title="Quizzes" class="quizzes">Quizzes</a></li><li class="section"><a href="/courses/63150/external_tools/34970" title="Student Resources" class="context_external_tool_34970">Student Resources</a></li></ul></nav>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+<style>
+  #right-side-wrapper {
+    height: 100%;
+  }
+</style>
+
+
+
+<div id="assignment_show" class="assignment content_underline_links">
+    <!--Student View-->
+    <div class='assignment-title'>
+      <div class='title-content'>
+        <h1 class="title">
+          Assignment5
+        </h1>
+      </div>
+      <div class='assignment-buttons'>
+        
+
+        <a role="button" class="Button Button--primary submit_assignment_link " href="#">Submit Assignment</a>
+      </div>
+    </div>
+    <ul class='student-assignment-overview'>
+      <li>
+        <span class='title'>Due</span>
+        <span class='value'>
+          <span class="date_text">
+                <span class="display_date">Tuesday</span> by 
+                <span class="display_time">12:01pm</span>
+          </span>
+        </span>
+      </li>
+      <li>
+        <span class='title'>Points</span>
+        <span class='value'>100</span>
+      </li>
+        <li>
+          <span class='title'>Submitting</span>
+          <span class='value'>a file upload</span>
+        </li>
+      
+  <li>
+    <span class="title">Available</span>
+    <span class="value">
+        Oct 1 at 12am - Oct 10 at 12:01pm
+        <span style="font-size: 0.8em;">10 days</span>
+    </span>
+  </li>
+
+      <div class="clear"></div>
+    </ul>
+
+  <div class="clear"></div>
+
+
+  <div class="clear"></div>
+
+  <div class="description user_content student-version"><p><span style="font-size: 10pt;"><strong>Assignment 5 [1 week]  </strong><strong>Spark Batch processing and Parquet</strong></span></p>
+<p><span style="font-size: 10pt;"><strong><span style="background-color: #ff0000;">WARNING: Please do not start working on this assignment on the last day before the deadline! :-)</span> This is especially important if you've never worked with Spark before. While not particularly difficult to work with, Spark setup and dependencies might be challenging in some cases. The sooner you start working on the assignment - the sooner you can start asking questions and have a much better chance to get a timely help from TAs and/or your classmates. The last days of the week are usually very busy for the teaching staff as we are working on the next Lab and homework ...</strong></span></p>
+<p> </p>
+<p><span style="font-size: 10pt;"><strong>Please use the following Submission Template: <a class="instructure_file_link instructure_scribd_file" title="Assignment5_SubmissionTemplate.docx" href="/courses/63150/files/8590380/download?wrap=1" data-api-endpoint="https://canvas.harvard.edu/api/v1/courses/63150/files/8590380" data-api-returntype="File">Assignment5_SubmissionTemplate.docx</a></strong></span></p>
+<p><span style="font-weight: 400; font-size: 10pt;">For Problems 1-3: use the same CSV files in S3 you used for HW4 as your input.</span></p>
+<p><span style="font-weight: 400; font-size: 10pt;">NOTE: we would like you to execute all your Spark jobs on a real Spark EMR cluster; you can still opt to run them locally - in which case you will lose 10 points per each problem not run on an EMR cluster.</span></p>
+<p> </p>
+<p><span style="font-size: 10pt;"><strong>Problem 1: unique counts </strong><span style="font-weight: 400;">[points: 40]</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt; background-color: #ffff00;">Use <strong>Spark RDDs</strong> only for this problem<span style="font-weight: 400;">, do </span><strong>not</strong><span style="font-weight: 400;"> use other API’s</span></span></li>
+<li style="font-weight: 400;">
+<span style="font-weight: 400; font-size: 10pt;">write Spark jobs that process all 4 input files from the S3 bucket and compute answers to the following queries:</span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Query1: get count of unique URLs per hour</span></li>
+<li style="font-weight: 400;"><span style="font-size: 10pt;">Query2: get count of unique visitors per URL per hour</span></li>
+<li style="font-weight: 400;"><span style="font-size: 10pt;">Query3: get count of unique (by UUID) events/clicks per URL per hour (one unique click == one log line in our test log files, since we assume they all have unique UUIDs)</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Tip: we suggest you create a separate Spark job for each query</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">examine Spark Admin Web UI (or relevant logs) and show execution stages and input/output sizes for each job </span></li>
+<li style="font-weight: 400;"><span style="font-size: 10pt;"><span style="font-weight: 400;">show results of each query </span><span style="font-weight: 400;">for the required keys (see submission template for required keys - same as in HW4)</span></span></li>
+</ul>
+<p> </p>
+<p><span style="font-size: 10pt;"><strong>Problem 2: Spark with Parquet [points: 20]</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Write a Spark job that reads in all your input CSV files and writes them out in the Parquet format</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Either S3 or HDFS is ok for the output files location</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Add compression to Parquet output files</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">examine structure of one of the generated Parquet files using the parquet-tools utility, and specifically - using the 'meta' command. How many Row Groups your file has? Do you see a compression type in the meta info?</span></li>
+<ul>
+<li style="font-weight: 400;"><span style="font-size: 10pt;"><span style="font-weight: 400;">Ref: </span><a href="https://github.com/apache/parquet-mr/tree/master/parquet-tools"><span style="font-weight: 400;">https://github.com/apache/parquet-mr/tree/master/parquet-tools</span></a></span></li>
+<li style="font-weight: 400;"><span style="font-size: 10pt;"><span style="font-weight: 400;">Tip: to run it on EMR using 'hadoop jar parquet-tools-&lt;x.x&gt;.jar </span><strong>meta</strong><span style="font-weight: 400;"> s3://&lt;your_bucket/yourfile.parquet&gt;' you may need to download (</span><a href="https://mvnrepository.com/artifact/org.apache.parquet/parquet-tools"><span style="font-weight: 400;">https://mvnrepository.com/artifact/org.apache.parquet/parquet-tools</span></a><span style="font-weight: 400;">) and scp the parquet-tools jar to your EMR master node </span></span></li>
+</ul>
+</ul>
+<p> </p>
+<p><span style="font-size: 10pt;"><strong>Problem 3: time range queries [points: 20]</strong></span></p>
+<p><span style="font-weight: 400; font-size: 10pt;">Write a Spark job that:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">uses generated Parquet input files and calculates results for Query4: </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">get count of unique URLs by country by hour for a  specified time range [t1-t2]</span></li>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">where t1 = 09/13/2019 5PM UTC and</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">t2 = 09/14/2019 9AM UTC</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Both range ends are inclusive</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Show results for the specified keys (see submission template for keys, same as in HW4)</span></li>
+</ul>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Enable query execution plan via explain() command</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Examine the execution plan and verify whether you were taking advantage of the columnar-based format or not</span></li>
+</ul>
+<p> </p>
+<p><span style="font-size: 10pt;"><strong>Problem 4: SparkSQL </strong><strong>[points: 20]</strong></span></p>
+<p><span style="font-weight: 400; font-size: 10pt;">Write a Spark job that:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">reads in generated Parquet input files </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Implements slightly modified Query 3 using Spark SQL:</span></li>
+<ul>
+<li style="font-weight: 400;"><span style="font-size: 10pt;"><span style="font-weight: 400;">Query3: get count of events  per URL for a specified hour: </span><span style="font-weight: 400;">2019-09-12:14</span></span></li>
+</ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Enable query execution plan</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Examine the execution plan and verify whether you were taking advantage of the columnar-based format or not</span></li>
+</ul>
+<p> </p>
+<p><span style="font-size: 10pt;"><strong>Problem B1: Bonus: top N queries </strong><span style="font-weight: 400;">[points: 15] </span></span></p>
+<p><span style="font-weight: 400; font-size: 10pt;">Write a Spark job (either Core RDD or SparkSQL can be used) that:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">uses generated Parquet input files and calculates results for Query5:</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">get top 5 URLs by avg daily TTFB, per each day in the input data set; consider "top" URLs to be those that have the smallest avg TTFB </span></li>
+</ul>
+<p> </p></div>
+
+
+  <div style="display: none;">
+    <span class="timestamp">1570550460</span>
+    <span class="due_date_string">10/08/2019</span>
+    <span class="due_time_string">12:01pm</span>
+  </div>
+</div>
+
+
+  
+<div style="display: none;" id="submit_assignment" data-context_code="course_63150" data-asset_string="assignment_296810">
+  <div class="content" id="submit_assignment_tabs">
+    <ul>
+        <li><a href="#submit_online_upload_form" class="submit_online_upload_option">File Upload</a></li>
+        <li><a href="#submit_google_doc_form" class="submit_online_url_option">Google Doc</a></li>
+    </ul>
+      
+<form id="submit_online_upload_form" class="submit_assignment_form" enctype="multipart/form-data" action="/courses/63150/assignments/296810/submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="lwPp8HjI9uxEeLANnUU2GXXk1UVCrySyeankHJ6j38nSZKGVTKmcnBxK0Wn7Fk4yRJ64LRDiYcoonr5F1cCTjQ==" />
+    <input value="online_upload" type="hidden" name="submission[submission_type]" id="submission_submission_type" />
+    <input value="" id="submission_attachment_ids" type="hidden" name="submission[attachment_ids]" />
+    <input id="eula_agreement_timestamp" type="hidden" name="submission[eula_agreement_timestamp]" />
+    <table class="formtable" style="width: 100%;">
+      <tr>
+        <td colspan="2">
+          Upload a file, or choose a file you&#39;ve already uploaded.
+            
+        </td>
+      </tr><tr>
+        <td><label id="attachmentLabel" for="attachment_uploaded_data">File:</label></td>
+        <td>
+          <button class="Button Button--link add_another_file_link">
+            <i class="icon-add" aria-hidden="true"></i>
+            Add Another File
+          </button>
+          <div id="submission_attachment_blank" class="submission_attachment" style="display: none;">
+            <input aria-labelledby="attachmentLabel" type="file" name="attachments[-1][uploaded_data]" class="input-file"/>
+            <a href="#" class="remove_attachment_link no-hover" style="display: none;"><i class="icon-end" aria-hidden="true"></i><span class="screenreader-only">remove empty attachment</span></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="font-size: 0.8em;">
+          <button class="Button Button--link toggle_uploaded_files_link">Click here to find a file you&#39;ve already uploaded</button><br/>
+          <div id="uploaded_files" style="display: none;" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea class="submission_comment_textarea" placeholder="Comments..." title="Additional comments" name="submission[comment]" id="submission_comment">
+</textarea>
+        </td>
+      </tr>
+      
+
+      
+
+      <tr>
+        <td colspan="2" class='button-container'>
+          <button type="button" class='cancel_button btn'>Cancel</button>
+          <button type="submit" class="btn btn-primary" id="submit_file_button">Submit Assignment</button>
+        </td>
+      </tr><tr style="display: none;">
+        <td colspan="2" style="text-align: center;">
+          Submitting... <img src=""/>
+        </td>
+      </tr>
+    </table>
+</form>
+
+
+
+    <style>
+    #google_docs_tree li.folder {
+      cursor: pointer;
+    }
+    #google_docs_tree li.file {
+      cursor: pointer;
+      -moz-border-radius: 3px;
+      width: 80%;
+      padding-right: 20px;
+    }
+    #google_docs_tree li.file:hover {
+      background-color: #eee;
+    }
+    ul.instTree li span.active {
+      background: none;
+    }
+    #google_docs_tree li.file.leaf.active {
+      background-color: #ddd;
+    }
+    #google_docs_tree li.file .filename {
+      float: left;
+      max-width: 98%;
+    }
+    #google_docs_tree li.file .popout {
+      float: right;
+    }
+    </style>
+        <div id="submit_google_doc_form">
+          Before you can submit assignments directly from Google Drive you need to authorize Canvas to access your Google Drive account:
+          <div style="font-size: 1.1em; text-align: center; margin: 10px;">
+            <a class="btn" href="https://canvas.harvard.edu/oauth?return_to=https%3A%2F%2Fcanvas.harvard.edu%2Fcourses%2F63150%2Fassignments%2F296810%23submit_google_doc_form&amp;service=google_drive">Authorize Google Drive Access</a>
+          </div>
+        </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+  <div id="rubrics" style="margin-bottom: 10px;">
+    <div style="display: none;" id="rubric_parameters">
+      <input type="hidden" name="rubric_association[association_type]" value="Assignment"/>
+      <input type="hidden" name="rubric_association[association_id]" value="296810"/>
+      <input type="hidden" name="rubric_association[purpose]" value="grading"/>
+    </div>
+    
+<div id="rubric_long_description_dialog" style="display: none;">
+  <div class="editing">
+    <form id="edit_criterion_form" class="no-margin-bottom">
+      <div>
+        <label class="rating_form_label">Description
+          <textarea class="description" rows="1" name="description"></textarea>
+        </label>
+      </div>
+      <div>
+        <label class="rating_form_label">Long Description
+          <textarea class="long_description" rows="4" name="long_description"></textarea>
+        </label>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn save_button btn-primary">Update Criterion</button>
+      </div>
+    </form>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div
+    class="criterion_description"
+    style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;"
+    tabindex="-1"
+  ></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Additional Comments:
+    </label>
+    <textarea
+      id="criterion_comments_textarea"
+      class="criterion_comments"
+      name="criterion_comments"
+      style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update Comments</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Additional Comments:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+<div id="rubric_rating_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+    <span id="edit_rating_form_criterion_description"></span>
+  </div>
+  <div class="editing">
+    <form id="edit_rating_form" class="no-margin-bottom">
+      <div class="toggle_for_hide_points">
+        <div><label id='rating_form_score_label' class="rating_form_label">Rating Score</label></div>
+        <span id='rating_form_max_score_label' hidden>Rating max score</span>
+        <input id="points" aria-labelledby="rating_form_score_label" type="text" size="2" name="points" class="no-margin-bottom span1" />
+        <span class="range_rating">to >
+          <input aria-label="Rating min score" type="text" size="2" name="min_points" class="no-margin-bottom span1 min_points" placeholder="min"/>
+        </span>pts
+      </div>
+      <div>
+        <label for="rating_form_title" class="rating_form_label">Rating Title</label>
+        <input id="rating_form_title" type="text" class="rating_description" style="width: 90%;" name="description"/>
+      </div>
+      <div>
+        <label for="rating_form_description" class="rating_form_label">Rating Description</label>
+        <textarea id="rating_form_description" rows="4" style="width: 90%;" class="rating_long_description" name="rating_long_description" form="edit_rating_form"></textarea>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn btn-primary save_button ok_button">Update Rating</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </div>
+  
+<div
+  class="rubric_container rubric  "
+  id="default_rubric"
+  style="display: none;"
+>
+  <div class="screenreader-only"><h2>Rubric</h2></div>
+  <div class="rubric_title">
+    <div style="display: none;" class="links displaying pull-right">
+      <a
+        href="/courses/63150/rubrics/%7B%7B%20id%20%7D%7D"
+        class=" edit_rubric_link no-print no-hover"
+        style=""
+        title="Edit Rubric"
+        aria-label="Edit Rubric"
+        role="button"
+      ><i class="icon-edit standalone-icon"></i></a>
+      <a
+        href="https://canvas.harvard.edu/search/rubrics?q="
+        class="find_rubric_link no-print no-hover"
+        style=""
+        title="Find Another Rubric"
+        aria-label="Find Another Rubric"
+        role="button"
+      ><i class="icon-search standalone-icon"></i></a>
+        <a
+          href="/courses/63150/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D"
+          class="delete_rubric_link no-print no-hover"
+          style=""
+          title="Delete Rubric"
+          aria-label="Delete Rubric"
+          role="button"
+        ><i class="icon-trash standalone-icon"></i></a>
+      <div style="display: none;">
+        <div class="use_for_grading">&nbsp;</div>
+        <div class="free_form_criterion_comments">&nbsp;</div>
+        <div class="hide_score_total">&nbsp;</div>
+        <div class="hide_outcome_results">&nbsp;</div>
+        <div class="hide_points">&nbsp;</div>
+        <div class="rubric_association_id">&nbsp;</div>
+          <div class="user_id">&nbsp;</div>
+        <div class="assessment_type"></div>
+        <a href="/courses/63150/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D/assessments/%7B%7B%20assessment_id%20%7D%7D" rel="nofollow" class="edit_assessment_link">&nbsp;</a>
+        <a href="/courses/63150/rubrics/%7B%7B%20rubric_id%20%7D%7D" class="edit_rubric_url">&nbsp;</a>
+          <a href="/courses/63150/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url">&nbsp;</a>
+      </div>
+    </div>
+    <div style="float: right; font-size: 0.8em; display: none;" class="links displaying locked">
+      <span style="">Can&#39;t change a rubric once you&#39;ve started using it.</span>
+        <a href="/courses/63150/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url" style="display: none;">&nbsp;</a>
+    </div>
+
+    <div class="editing" style="float: right;">
+      <a href="https://canvas.harvard.edu/search/rubrics?q=" class="find_rubric_link icon-search" style="" title="Find Existing Rubric">Find a Rubric</a>
+    </div>
+    <div class="editing" style="text-align: left">
+      <label for="rubric-title">Title:</label>
+      <input id="rubric-title" type="text" class="no-margin-bottom" name="title" value="Some Rubric" style="width: 200px;" maxlength="255" aria-label="Title:"/>
+      <a href="https://canvas.harvard.edu/search/rubrics?q=" style="display: none;"><img alt="" src="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/find-6164443e2a.png" /> Find Rubric</a>
+    </div>
+    <div class="displaying">
+      <span class="title" tabindex="-1">Title</span>
+    </div>
+    <div class="has-assessments-warning" style="display: none;">
+      You&#39;ve already rated students with this rubric.  Any major changes could affect their assessment results.
+    </div>
+  </div>
+<table class="rubric_table">
+<caption>
+  <div class="screenreader-only">
+    <span class="title">Title</span>
+  </div>
+</caption>
+<thead>
+  <tr>
+    <th scope="col">Criteria</th>
+    <th scope="col">Ratings</th>
+    <th scope="col" class="toggle_for_hide_points ">
+      Pts
+    </th>
+  </tr>
+</thead>
+<tbody>
+  
+<tr id="criterion_blank" class="criterion blank  " style="display: none;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a Learning Outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div style="display: none;" class="long_description_holder editing empty">
+          <a href="#" class="long_description_link hidden">view longer description</a>
+          <textarea class="long_description" aria-label="Long Description" style="display: none;"></textarea>
+        </div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range" /></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tr>
+          <td id="rating_blank"
+              class="rating edge_rating
+                
+                "
+          >
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="#" class="delete_rating_link"><i class="icon-trash standalone-icon" ></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to ><span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">Full Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_blank_2"
+              class="rating edge_rating
+                infinitesimal
+                "
+          >
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="#" class="delete_rating_link"><i class="icon-trash standalone-icon" ></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to ><span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">No Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input
+              type="text"
+              aria-label="Points"
+              value="5"
+              class="criterion_points span1 no-margin-bottom"
+            />
+           pts
+      </span><br />
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br />
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="#" class="no-hover criterion_comments_link" title="Additional Comments">
+          <img alt="Additional Comments" src="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/rubric_comment-ddae8546ab.png" />
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+  <tr class="summary">
+    <td colspan="4">
+      <div class="total_points_holder toggle_for_hide_points "
+        style="float: right; ">
+        <span>Total Points:
+            <span class="rubric_total">
+              5
+            </span>
+ <span class="assessing">out of 5</span>        </span>
+      </div>
+      <div class="editing pull-left">
+        <span id="add_criterion_holder" class="criterion_link"></span>
+      </div>
+      <div class="clear"></div>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<table style="display: none;">
+  <tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating" />
+          <label for="rubric_custom_rating">I&#39;ll write free-form comments when assessing students</label>
+        </div>
+          <div class="hide_points" style="">
+            <input type="checkbox" id="hide_points" class="hide_points_checkbox" />
+            <label for="hide_points">Remove points from rubric</label>
+          </div>
+          <div class="hide_outcome_results" style="">
+            <input type="checkbox" id="hide_outcome_results" class="hide_outcome_results_checkbox" />
+            <label for="hide_outcome_results">Don&#39;t post Outcomes results to Learning Mastery Gradebook</label>
+          </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox" />
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox" />
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create Rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</table>
+
+
+  <div id="assignment_external_tools"></div>
+
+  
+
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+<div id="sidebar_content">
+
+
+</div>
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">eabeb608-cbb2-40a6-a600-98c5014a2397</div>
+    </div>
+  <div id='aria_alerts' class='hide-text affix' role="alert" aria-live="assertive"></div>
+  <div id='StudentTray__Container'></div>
+  
+
+<script>
+  INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"iad.rtmp.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[{"name":"YouTube","id":18015,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=youtube","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/youtube_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false},{"name":"Vimeo","id":18016,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=vimeo","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/vimeo_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false},{"name":"Course Info","id":20525,"url":"https://canvas-course-info.tlt.harvard.edu/course_info/lti_launch","icon_url":"https://canvas-course-info.tlt.harvard.edu/static/images/course-info.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":false}]};
+  ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net/br","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/df1a85bafcff919b731c968e5d6694f6/variables-8391c84da435c9cfceea2b2b3317ff66.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/df1a85bafcff919b731c968e5d6694f6/variables-8391c84da435c9cfceea2b2b3317ff66.css","https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-e4ebc469d3.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/default/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.css","https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-50b1157940.css"],"current_user_id":"323911","current_user_roles":["user","student"],"current_user_disabled_inbox":false,"files_domain":"cluster208.canvas-user-content.com","DOMAIN_ROOT_ACCOUNT_ID":18750000000000001,"k12":false,"use_responsive_layout":false,"use_rce_enhancements":false,"use_unsplash_image_search":true,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://canvas.harvard.edu","DEEP_LINKING_LOGGING":null,"SETTINGS":{"open_registration":false,"collapse_global_nav":false,"show_feedback_link":true,"filter_speed_grader_by_student_group":false},"current_user":{"id":"323911","display_name":"Loi Cheng","avatar_image_url":"https://canvas.harvard.edu/images/thumbnails/8397243/cnySfmEmPO1aXpIAlBh3NpPUG20CsJfGxTjZC8oU","html_url":"https://canvas.harvard.edu/about/323911","avatar_is_fallback":false},"page_view_update_url":"/page_views/eabeb608-cbb2-40a6-a600-98c5014a2397?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiZWFiZWI2MDgtY2JiMi00MGE2LWE2MDAtOThjNTAxNGEyMzk3IiwidSI6MTg3NTAwMDAwMDAzMjM5MTEsImMiOiIyMDE5LTEwLTA0VDE0OjAwOjIyLjM2WiJ9.JlCRTqjJAr-grrL63gcrUSyIbfaKIaWBsPZ9mRnvdjo","context_asset_string":"course_63150","ping_url":"https://canvas.harvard.edu/api/v1/courses/63150/ping","TIMEZONE":"America/New_York","CONTEXT_TIMEZONE":"America/New_York","LOCALE":"en","BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","COURSE_ID":63150,"RICH_CONTENT_APP_HOST":"rich-content-iad.inscloudgate.net","RICH_CONTENT_SKIP_SIDEBAR":null,"JWT":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSW4wLi41VGhGaThxVWJyRmRhYjVMLk5EQ2tSU0FkZjVBMGNzM01ScFlzRHJKLUQwWk81dTBqM0x2QmJuSzEwcXd0V09qUGRkdjhERWJUMmU2T3VQV1BIRWZkWXNXeC1LWHVhM093dzFHZXVGZktVbWp0Rmg5SGNvMGwyck1CVUVZeXRWYXp5a2pCei1fdURiUlRCaTJjOFFFTzNWQ2ctazNqS0lDaHQxdWowUFZHNDdib3lSa3VmYVVMUjZSME45Zk9UNTdKM3drSWdhSm1SUEpSeHVUVndYWjZTWHoxUXIxVWtoNHp2Y0JveFozTEhCWjFfSWxDYUZ3VGdra2xNS3BrSzI4ZHd6U3hDNGEtMFMwaFl2d3pYZFlRSWRUeHRTQUZMVHlzRU5jbzZYY3ljVVlSMWc2ZGZzdjdyX1lVdERNblVnQTdVYlhYazU5MXpXQTY0Snl0NVVaVzM1M3VpX2hLYU9FcTBLb3JwbDczdFE1UFBweE1QcXBaazFlaHM2V1BycjRCS1V1UldTR0VaTDdocFdTU3phWElIN0hhWmFrNjZ4M3B2OVNPVVdUUTRuMmQ4MDR4Y0htZ2FQejQ5dnFzOUhncGwtbWxIOVF4ZXZPdTR1N19vbUozMTRtMnk4YU1QbjlmMGRFVzB5bGg2elRRQ2FNWFU5Q0ZSWlF3UEtONnBGTmljMDZxSUpYYVY3b3lIS24yNGIyWTJwODhBcTFNMGtPeUdaZGVXRFZjUnZRM3NlQkhIT1pWQ3U0NmYxUE9RbmZ6QUVTeGRyNjZrdWZubllqODRaS0UyZ0VCMk8zUWVPMGRyOWJlTWlsTFhEc0QyZTdpLWs5RTIwOVhIdXRrcmZGc09nZXUwRDdibFFnUnJaZXdvZ0w2SU1VTXluQUEyOTQyRHpTQWIyMVZqV0NBdUhsTGJQNE4tVm14STUtTEFlSjNyQ1Z1V0xsRkxmOVJjQ0o2akZSUW1wNF9NU0V1MUF2X0tFNXZfTEJWUTY2aF9JckFRQVpXQnQ5NDFvSjR3bGlIcnlDb3pQZlpPd3hxRFZlYnFVT01nZVRybERJN19RenJGTWtVSU5jWjJqNFdsX3VCQU9kWkxBLnhhUjgwOGc5VWJldVdNNGFPX05HSkE=","RICH_CONTENT_CAN_UPLOAD_FILES":false,"RICH_CONTENT_FILES_TAB_DISABLED":true,"ASSIGNMENT_ID":296810,"PREREQS":{},"EULA_URL":null,"EXTERNAL_TOOLS":[],"PERMISSIONS":{"context":{"read_as_admin":false,"manage_assignments":false},"assignment":{"update":false,"submit":true}},"ROOT_OUTCOME_GROUP":{"id":"47062","title":"Principles of Big Data Processing","vendor_guid":null,"url":"/api/v1/courses/63150/outcome_groups/47062","subgroups_url":"/api/v1/courses/63150/outcome_groups/47062/subgroups","outcomes_url":"/api/v1/courses/63150/outcome_groups/47062/outcomes","can_edit":false,"import_url":"/api/v1/courses/63150/outcome_groups/47062/import","context_id":"63150","context_type":"Course","description":null},"SIMILARITY_PLEDGE":null,"SUBMIT_ASSIGNMENT":{"ALLOWED_EXTENSIONS":[],"ID":296810,"GROUP_ID_FOR_USER":null},"badge_counts":{"submissions":1},"notices":[],"active_context_tab":"assignments"};
+</script>
+
+
+<script src="https://instructure-uploads.s3.amazonaws.com/account_18750000000000001/attachments/8491879/theme.min.js" defer="defer"></script>
+<script src="https://instructure-uploads.s3.amazonaws.com/account_18750000000000001/attachments/8533143/BzlueGradebook.js" defer="defer"></script>
+
+</div> <!-- #application -->
+</body>
+</html>

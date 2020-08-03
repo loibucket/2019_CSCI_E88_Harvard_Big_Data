@@ -1,0 +1,31 @@
+# 1. start docker containers
+docker-compose -f twitter_project.yaml up -d --scale kafka=3
+
+# 2. create topic using kafka container
+docker exec -i project_kafka_1 kafka-topics.sh \
+    --create \
+    --zookeeper zookeeper:2181 \
+    --replication-factor 2 \
+    --partitions 2 \
+    --topic project
+
+# 3. start flume in jdk container to collect twitter data
+docker exec -it project_jdk_1 bash
+
+docker_share/apache-flume-1.9.0-bin/bin/flume-ng agent \
+    -c /docker_share/conf \
+    -f /docker_share/conf/flume_project.conf \
+    -n TwitterAgent \
+    -C /docker_share/aux_lib \
+    -Dflume.root.logger=DEBUG,console
+
+# 4. (optional) start kafka consumer to view messages
+docker exec -i project_kafka_2 kafka-console-consumer.sh \
+    --bootstrap-server project_kafka_1:9092 \
+    --topic project
+
+# 5. run elk container, use logstash to consume kafka messages and send to elasticsearch
+docker exec -it project_elk_1 bash
+
+service logstash stop
+/opt/logstash/bin/logstash -f /docker_share/conf/logstash-kafka.conf

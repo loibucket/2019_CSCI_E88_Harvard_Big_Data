@@ -1,0 +1,56 @@
+CREATE KEYSPACE hw10 WITH REPLICATION = { 'class' : 'SimpleStrategy','replication_factor' : 1 };
+
+./bin/cassandra
+./bin/cqlsh localhost
+
+DROP TABLE hw10.hw10_p1;
+CREATE TABLE IF NOT EXISTS hw10.hw10_p1 (
+id UUID,
+time timestamp,
+url text,
+userId text,
+country text,
+ua_browser text,
+ua_os text,
+response_status int,
+TTFB float,
+date date,
+PRIMARY KEY ((url, country, date), time, id)
+);
+
+TRUNCATE hw10.hw10_p1;
+DROP TABLE hw10.hw10_p1;
+
+SELECT * FROM hw10.hw10_p1;
+
+SELECT url, country, COUNT(url) FROM hw10.hw10_p1 GROUP BY url,time;
+
+SELECT url, country, time, COUNT(url) FROM hw10.hw10_p1 GROUP BY url,time,id;
+
+SELECT * FROM hw10.hw10_p1 
+WHERE country = 'SJ' ALLOW FILTERING ; 
+
+
+
+SELECT url, country, count(*) FROM hw10.hw10_p1 
+WHERE date = '2019-09-14' and 
+country = 'SN' and 
+url = 'http://example.com/?url=149' and 
+time >= '2019-09-14 01:00:00Z' and time <= '2019-09-14 23:00:00Z'
+GROUP BY url, country, date ;
+
+
+SELECT url, country, count(*) FROM hw10.hw10_p1 
+WHERE date = '2019-09-12' and 
+country = 'SJ' and 
+url = 'http://example.com/?url=067' and 
+time >= '2019-09-12 00:00:00Z' and time <= '2019-09-12 03:00:00Z'
+GROUP BY url, country, date ;
+
+
+SELECT url, country, AVG(TTFB) FROM hw10.hw10_p1 
+WHERE date = '2019-09-14' and 
+country = 'SN' and 
+url = 'http://example.com/?url=149' and 
+time >= '2019-09-14 01:00:00Z' and time <= '2019-09-14 23:00:00Z'
+GROUP BY url, country, date ;

@@ -1,0 +1,10 @@
+#hw3_python-docker-compose.yml
+#use this to launch the hw3_python image
+version: '3'
+
+services:
+
+  python_client1:
+    image: hw3_python
+    container_name: python_client1
+    tty: true

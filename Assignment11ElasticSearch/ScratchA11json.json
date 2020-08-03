@@ -1,0 +1,215 @@
+PUT hw11_p2_index
+{
+    "mappings":{
+        "properties":{
+            "logId":{"type": "text"},
+            "eventTime":{"type": "date"},
+            "url":{"type": "keyword"},
+            "us_country":{"type": "keyword"},
+            "userId":{"type": "text"},
+            "browser":{"type": "keyword"},
+            "ua_os":{"type": "keyword"},
+            "responseCode":{"type": "integer"},
+            "ttfb":{"type": "float"}
+        }
+    }
+}
+
+PUT hw11_p4_index
+{
+    "mappings":{
+        "properties":{
+            "logId":{"type": "text"},
+            "eventTime":{"type": "date"},
+            "url":{"type": "keyword"},
+            "us_country":{"type": "keyword"},
+            "userId":{"type": "text"},
+            "browser":{"type": "keyword"},
+            "ua_os":{"type": "keyword"},
+            "responseCode":{"type": "integer"},
+            "ttfb":{"type": "float"},
+            "location":{"type": "geo_point"}
+        }
+    }
+}
+
+
+DELETE /hw11_p2_index
+
+
+PUT hw11_p2_index_trial/doc
+{
+    "logId":"id1",
+    "eventTime":"2018-04-10T15:15:30Z",
+    "url":"http://google.com/rum2",
+    "us_country":"Russia",
+    "userId":"u3",
+    "browser":"CHROME2",
+    "ua_os":"MacOSX10.1",
+    "responseCode":200,
+    "ttfb":6.9
+}
+
+GET /hw11_p2_index_trial/_search/
+{
+
+}
+
+curl -XPOST 'localhost:9200/hw11_p2_index/_search?pretty' -H 'Content-Type: application/json' -d '
+{
+  "query": { "match_all": {} }
+}'
+
+curl -XPOST 'localhost:9200/hw11_p2_index/_doc/0?pretty' -H 'Content-Type: application/json' -d '
+{
+    "logId":"id999",
+    "eventTime":"2018-04-10T15:15:30Z",
+    "url":"http://google.com/rum2",
+    "us_country":"Russia",
+    "userId":"u3",
+    "browser":"CHROME2",
+    "ua_os":"MacOSX10.1",
+    "responseCode":200,
+    "ttfb":6.9
+}'
+
+
+{
+    "aggs": {
+      "agg1": {
+        "terms": {
+          "field": "field1"
+        },
+        "aggs": {
+          "agg2": {
+            "terms": {
+              "field": "field2"
+            },
+            "aggs": {
+              "agg3": {
+                "terms": {
+                  "field": "field3"
+                }
+              }
+            }          
+          }
+        }
+      }
+    }
+  }
+
+  {
+    "aggs": {
+      "agg1": {
+        "terms": {
+          "field": "field1"
+        },
+        "aggs": {
+          "agg2": {
+            "terms": {
+              "field": "field2"
+            }         
+          }
+        }
+      }
+    }
+  }
+
+  GET /hw11_p2_index/_search
+  {
+    "aggs": {
+      "agg1": {
+        "terms": {
+          "field": "us_country"
+        },
+        "aggs": {
+          "agg2": {
+            "terms": {
+              "field": "browser"
+            }         
+          }
+        }
+      }
+    }
+  }
+
+  https://stackoverflow.com/questions/18449703/elasticsearch-group-by-multiple-fields
+
+GET /hw11_p2_index/_search
+{
+    "aggs": {
+        "agg1": {
+            "filter":{
+            "range" : {
+                "responseCode" : {
+                    "gte" : 400,
+                    "lte" : 499
+                }
+            }
+            },
+        "aggs": {
+            "agg2": {
+            "terms": {
+                "field": "us_country"
+            }         
+            }
+        }
+        }
+    }
+}
+
+GET /hw11_p2_index/_search
+{
+    "query": {
+        "range" : {
+            "responseCode" : {
+                "gte" : 400,
+                "lte" : 499
+            }
+        }
+    }
+}
+
+POST /sales/_search?size=0
+{
+    "aggs" : {
+        "agg_title" : {
+            "filter" : {         
+                "range" : {
+                    "responseCode" : {
+                        "gte" : 400,
+                        "lte" : 499
+                    }
+                } 
+            },
+            "aggs" : {
+                "terms": {
+                    "field": "us_country"
+                }   
+            }
+        }
+    }
+}
+
+GET /hw11_p2_index/_search
+{
+    "aggs": {
+        "agg_title": {
+            "terms": {
+                "field": "us_country"
+            },
+            "aggs": {
+                "agg_by_code": {
+                    "filter": {
+                        "range": {
+                            "added": {
+                                "gte": 400,
+                                "lte": 499
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

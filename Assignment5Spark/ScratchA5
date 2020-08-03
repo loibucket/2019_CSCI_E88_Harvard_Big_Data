@@ -1,0 +1,25 @@
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
+spark-submit --master "local[2]" hw5_problem1_q1.py 1
+spark-submit --master "local[2]" hw5_problem1_q2.py 1
+spark-submit --master "local[2]" hw5_problem1_q3.py 1
+spark-submit --master "local[2]" hw5_problem2.py 1
+spark-submit --master "local[2]" hw5_problem3_q4.py 1
+spark-submit --master "local[2]" hw5_problem4_q3sql.py 1
+spark-submit --master "local[2]" hw5_problem5_q5.py 1
+
+spark-submit --master yarn hw5_problem1_q1.py
+spark-submit --master yarn hw5_problem1_q2.py
+spark-submit --master yarn hw5_problem1_q3.py
+spark-submit --master yarn hw5_problem2.py
+
+spark-submit --master yarn hw5_problem3_q4.py
+spark-submit --master yarn hw5_problem4_q3sql.py
+spark-submit --master yarn hw5_problem5_q5.py
+
+
+ssh -i BigDataHarvard.pem hadoop@ec2-18-225-35-225.us-east-2.compute.amazonaws.com
+
+aws s3 cp s3://csci.e-88.principles.of.big.data.processing/spark_queries  emr_spark_queries --recursive
+
+hadoop jar parquet-tools-1.10.1.jar meta "s3a://csci.e-88.principles.of.big.data.processing/hw5_problem2.parquet"

@@ -1,0 +1,27 @@
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic lab9
+bin/kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic lab9
+
+scp -i "bigdatahw9.pem" WebblogsKafkaProducer-jar-with-dependencies.jar ec2-user@ec2-54-166-176-227.compute-1.amazonaws.com:
+scp -i "bigdatahw9.pem" WeblogsKafkaProducer.java ec2-user@ec2-54-166-176-227.compute-1.amazonaws.com:
+scp -i "bigdatahw9.pem" producer-python*.py ec2-user@ec2-54-166-176-227.compute-1.amazonaws.com:
+
+
+Run Kafka Producer
+java -cp lab9-0.0.1-SNAPSHOT-jar-with-dependencies.jar edu.harvard.e88.lab9.WeblogsKafkaProducer lab9 34.201.113.133:9092
+java -cp WebblogsKafkaProducer-jar-with-dependencies.jar edu.harvard.e88.lab9.WeblogsKafkaProducer lab9 34.201.113.133:9092
+
+wget http://apache.spinellicreations.com/kafka/2.2.1/kafka_2.11-2.2.1.tgz && tar -xf kafka*.tgz && rm -fr kafka*.tgz
+
+bin/kafka-console-consumer.sh --bootstrap-server 34.201.113.133:9092 --topic lab9 --property print.key=true --property key.separator="-"
+
+ssh -i bigdatahw9.pem hadoop@ec2-54-80-137-121.compute-1.amazonaws.com
+
+scp -i bigdatahw9.pem *.py hadoop@ec2-54-80-137-121.compute-1.amazonaws.com:
+
+spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.0.0 SparkStreamingConsumer.py 34.201.113.133:9092 lab9
+spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.0.0 SparkStreamingConsumer_P1.py 34.201.113.133:9092 lab9
+spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.0.0 SparkStreamingConsumer_P2.py 34.201.113.133:9092 lab9
+
+I took the brute force approach of moving /etc/spark/conf/log4j.properties to another name. This still shows some initial INFO messages, but once the results start printing out the flood of INFO stops. 
+
+spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.0.0 SparkStreamingConsumer_P3.py 34.201.113.133:9092 lab9 0.01

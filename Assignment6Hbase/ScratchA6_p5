@@ -1,0 +1,10 @@
+ssh -i ~/BigDataHarvard.pem hadoop@ec2-18-220-155-57.us-east-2.compute.amazonaws.com
+scp -i ~/BigDataHarvard.pem *.py hadoop@ec2-18-220-155-57.us-east-2.compute.amazonaws.com:.
+
+spark-submit hw6_problem3_q2happybase.py
+
+spark-submit --deploy-mode cluster --master yarn hw6_problem5_happybase.py
+
+spark-submit hw6_problem5_happybase.py
+
+

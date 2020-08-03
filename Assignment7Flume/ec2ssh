@@ -1,0 +1,4 @@
+Host aws-ec2
+    User centos
+    HostName ec2-18-219-127-173.us-east-2.compute.amazonaws.com
+    IdentityFile ~/BigDataHarvard.pem

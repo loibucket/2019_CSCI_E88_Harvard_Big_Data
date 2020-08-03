@@ -1,0 +1,83 @@
+CREATE KEYSPACE hw10 WITH REPLICATION = { 'class' : 'SimpleStrategy','replication_factor' : 1 };
+
+./bin/cassandra
+./bin/cqlsh localhost
+
+DROP TABLE hw10.hw10_p1;
+
+DROP TABLE hw10.hw10_p2;
+CREATE TABLE IF NOT EXISTS hw10.hw10_p2 (
+id UUID,
+time timestamp,
+url text,
+userId text,
+country text,
+ua_browser text,
+ua_os text,
+response_status int,
+TTFB float,
+hour timestamp,
+PRIMARY KEY ((url, country, hour), time, id)
+);
+
+TRUNCATE hw10.hw10_p2;
+
+SELECT * FROM hw10.hw10_p2;
+
+SELECT url, country, COUNT(url) FROM hw10.hw10_p2 GROUP BY url,time;
+
+SELECT url, country, time, COUNT(url) FROM hw10.hw10_p2 GROUP BY url,time,id;
+
+SELECT * FROM hw10.hw10_p2
+WHERE country = 'SJ' ALLOW FILTERING ; 
+
+
+SELECT url, country, count(*) FROM hw10.hw10_p2
+WHERE hour = '2019-09-13 19:00:00Z' and 
+country = 'SJ' and 
+url = 'http://example.com/?url=021' and 
+time >= '2019-09-13 19:00:00Z' and time <= '2019-09-13 19:40:00Z';
+GROUP BY url, country, hour ;
+
+
+SELECT url, country, count(*) FROM hw10.hw10_p2 
+WHERE hour = '2019-09-12 19:00:00Z' and 
+country = 'SN' and 
+url = 'http://example.com/?url=169' and 
+time >= '2019-09-12 19:10:00Z' and time <= '2019-09-12 19:50:00Z'
+GROUP BY url, country, hour ;
+
+
+SELECT url, country, AVG(TTFB) FROM hw10.hw10_p2 
+WHERE hour = '2019-09-12 19:00:00Z' and 
+country = 'SN' and 
+url = 'http://example.com/?url=169' and 
+time >= '2019-09-12 19:10:00Z' and time <= '2019-09-12 19:50:00Z'
+GROUP BY url, country, hour ;
+
+
+
+
+
+
+SELECT url, country, AVG(TTFB),id FROM hw10.hw10_p2 
+WHERE hour = '2019-09-12 19:00:00Z' and 
+country = 'SN' and 
+url = 'http://example.com/?url=169' and 
+time >= '2019-09-12 19:10:00Z' and time <= '2019-09-12 19:50:00Z'
+GROUP BY url, country, hour;
+
+SELECT url, country, AVG(TTFB),id FROM hw10.hw10_p2 
+WHERE hour = '2019-09-12 19:00:00Z' and 
+country = 'SN' and 
+url = 'http://example.com/?url=169' and 
+time >= '2019-09-12 19:10:00Z' and time <= '2019-09-12 19:50:00Z'
+GROUP BY id,time;
+
+
+SELECT url, country, TTFB FROM hw10.hw10_p2 
+WHERE hour in ('2019-09-12 19:00:00Z','2019-09-12 20:00:00Z') and 
+country = 'SN' and 
+url = 'http://example.com/?url=169' and 
+time >= '2019-09-12 19:10:00Z' and time <= '2019-09-12 20:50:00Z';
+GROUP BY url, country, hour ;

@@ -1,0 +1,138 @@
+docker-compose -f kafka-docker-compose.yaml up -d --scale kafka=3
+
+docker-compose -f kafka-docker-compose.yaml down
+
+docker exec -it assignment8kafka_kafka_1 bash
+
+kafka-topics.sh --describe --zookeeper zookeeper:2181
+
+kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 2 --partitions 2 --topic problem1
+
+docker exec -i assignment8kafka_kafka_1 kafka-console-producer.sh \
+  --broker-list localhost:9092 \
+  --topic problem1 \
+  --property "parse.key=true" \
+  --property "key.separator=:"
+
+docker exec assignment8kafka_kafka_1 kafka-console-consumer.sh \
+--bootstrap-server localhost:9092 \
+--topic problem1 \
+--property print.key=true \
+--property key.separator="-"
+
+docker exec -i assignment8kafka_kafka_1 kafka-run-class.sh kafka.tools.DumpLogSegments
+
+kafka-run-class.sh kafka.tools.DumpLogSegments --files /kafka/kafka-logs-4a32896b582b/problem1-1/00000000000000000000.log --print-data-log --deep-iteration | less
+
+docker exec -it assignment8kafka_python37_1 bash
+
+----------
+
+docker-compose -f kafka-docker-compose_p2.yaml up -d --scale kafka=3
+
+docker-compose -f kafka-docker-compose_p2.yaml down --remove-orphans
+
+docker exec -it assignment8kafka_ubuntu_1 bash
+
+apt-get update
+apt-get install python3.7
+apt-get install openjdk-8-jdk
+apt-get install apache2
+apt-get install curl
+apt-get install nano
+apt-get install wget
+
+service apache2 stop
+rm /var/log/apache2/access.log
+touch /var/log/apache2/access.log
+service apache2 start
+
+service apache2 status
+curl http://localhost/index.html
+cd /var/www/html
+tail -n 20 /var/log/apache2/access.log
+wc -l /var/log/apache2/access.log
+
+wget http://mirrors.gigenet.com/apache/flume/1.9.0/apache-flume-1.9.0-bin.tar.gz
+tar xvzf apache-flume-1.9.0-bin.tar.gz
+
+docker exec assignment8kafka_kafka_1 kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 2 --partitions 2 --topic problem2_a
+
+docker exec assignment8kafka_kafka_1 kafka-console-consumer.sh \
+--bootstrap-server localhost:9092 \
+--topic problem2_b \
+--property print.key=true \
+--property key.separator="-"
+
+/apache-flume-1.9.0-bin/bin/flume-ng agent -n a1 -c /apache-flume-1.9.0-bin/conf -f /dockershared/flume-conf-filesink.properties -Dflume.root.logger=INFO,console
+
+/apache-flume-1.9.0-bin/bin/flume-ng agent -n a1 -c /apache-flume-1.9.0-bin/conf -f /dockershared/flume-conf-kafka2.properties -Dflume.root.logger=INFO,console
+
+docker exec assignment8kafka_kafka_1 kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic problem2_b
+
+docker exec -it assignment8kafka_kafka_1 bash
+
+docker exec assignment8kafka_kafka_1 kafka-consumer-groups.sh --describe --all-groups --bootstrap-server localhost:9092
+
+----------
+
+docker-compose -f kafka-docker-compose_p3.yaml down --remove-orphans
+docker-compose -f kafka-docker-compose_p3.yaml up -d --scale kafka=3
+docker exec assignment8kafka_kafka_2 kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 3 --topic problem3
+docker exec assignment8kafka_kafka_1 kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic problem3
+
+
+docker exec assignment8kafka_kafka_3 kafka-console-consumer.sh \
+--bootstrap-server localhost:9092 \
+--topic problem3 \
+--property print.key=true \
+--property key.separator="-"
+
+docker exec -i assignment8kafka_kafka_1 kafka-console-producer.sh \
+  --broker-list localhost:9092 \
+  --topic problem3 \
+  --property "parse.key=true" \
+  --property "key.separator=:"
+
+docker exec -it assignment8kafka_ubuntu_1 bash
+
+apt-get install python3-pip
+pip3 install kafka-python
+apt-get install python3.6
+
+python3.6 producer-python-p3.py
+python3.6 consumer-python-p3.py
+
+docker exec assignment8kafka_kafka_1 kafka-consumer-groups.sh --describe --all-groups --bootstrap-server localhost:9092
+
+python3.6 producer-python-bonusA.py
+
+----------
+
+docker exec assignment8kafka_kafka_2 kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 2 --partitions 4 --topic problemb
+
+docker exec assignment8kafka_kafka_2 kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic problemb
+
+docker exec assignment8kafka_kafka_1 kafka-console-consumer.sh \
+--bootstrap-server localhost:9092 \
+--topic problemb \
+--property print.key=true \
+--property key.separator="-"
+
+docker exec -i assignment8kafka_kafka_1 kafka-console-producer.sh \
+  --broker-list localhost:9092 \
+  --topic problemb \
+  --property "parse.key=true" \
+  --property "key.separator=:"
+
+docker exec -it assignment8kafka_kafka_1 bash
+
+docker network disconnect kafka-demo-net assignment8kafka_kafka_1
+
+docker exec assignment8kafka_kafka_2 kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic problemb
+
+docker network connect kafka-demo-net assignment8kafka_kafka_1
+
+docker exec assignment8kafka_kafka_2 kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic problemb
+
+

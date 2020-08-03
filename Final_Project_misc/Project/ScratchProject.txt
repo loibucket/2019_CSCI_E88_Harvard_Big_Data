@@ -1,0 +1,64 @@
+https://github.com/cloudera/cdh-twitter-example/blob/master/flume-sources/flume.conf
+
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+
+/apache-flume-1.9.0-bin/bin/flume-ng agent -c /docker_share/conf -f /docker_share/conf/flume_twitter.conf -n TwitterAgent -C /docker_share/aux_lib -Dflume.root.logger=DEBUG,console
+/apache-flume-1.9.0-bin/bin/flume-ng agent -c /docker_share/conf -f /docker_share/conf/flume_kafka_file.conf -n TwitterAgent -C /docker_share/aux_lib -Dflume.root.logger=DEBUG,console
+/apache-flume-1.9.0-bin/bin/flume-ng agent -c /docker_share/conf -f /docker_share/conf/flume_kafka_twitter.conf -n TwitterAgent -C /docker_share/aux_lib -Dflume.root.logger=DEBUG,console
+
+docker-compose -f twitter_flume18.yaml up
+docker-compose -f twitter_flume18.yaml down
+
+docker network connect twitter-demo-net project_flume18_1
+docker exec -it project_flume18_1 bash
+
+https://bigindustries.be/creating-a-data-pipeline-using-flume-kafka-spark-and-hive/
+https://community.cloudera.com/t5/Support-Questions/Flume-custom-source/td-p/62680
+
+javac -classpath "/Users/loi/MEGA/Courses/2019_CSCI_E-88_PrinciplesOfBigDataProcessing/Project/apache-flume-1.9.0-bin/lib/*" TwitterSource.java TwitterSourceConstants.java
+mkdir -p com/cloudera/flume/source/
+cp *.java com/cloudera/flume/source/
+jar cvf ClouderaTwitterSource.jar com/cloudera/flume/source/*
+
+docker-compose -f twitter_kafka_flume.yaml up -d --scale kafka=3
+docker-compose -f twitter_kafka_flume.yaml down
+
+docker-compose -f twitter_elk.yaml up
+
+docker exec -it project_kafka_1 bash
+docker exec -it project_ubuntu_1 bash
+docker exec project_kafka_1 kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 2 --partitions 2 --topic project
+
+docker exec project_kafka_1 kafka-console-consumer.sh \
+--bootstrap-server localhost:9092 \
+--topic project \
+--property print.key=true \
+--property key.separator="-"
+
+docker exec -i project_kafka_1 kafka-console-producer.sh \
+  --broker-list localhost:9092 \
+  --topic project \
+  --property "parse.key=true" \
+  --property "key.separator=:"
+
+apt-get update
+apt-get install openjdk-8-jdk
+
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+GET /_cat/indices
+
+GET /project/_search/
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+DELETE /project

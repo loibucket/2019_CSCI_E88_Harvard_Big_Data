@@ -1,0 +1,26 @@
+#hw3_p1_docker-compose.yml
+#the hw3_python docker image was made to run hw3_problem1.py and process the input_files 
+#four containers are created from the hw3_python image, and each of them processes one input file
+version: '3'
+
+services:
+
+  python_client1:
+    image: hw3_python
+    container_name: python_client1
+    command: bash -c "python hw3_problem1.py 'input_files/file-input1.csv' "
+
+  python_client2:
+    image: hw3_python
+    container_name: python_client2
+    command: bash -c "python hw3_problem1.py 'input_files/file-input2.csv' "
+
+  python_client3:
+    image: hw3_python
+    container_name: python_client3
+    command: bash -c "python hw3_problem1.py 'input_files/file-input3.csv' "
+
+  python_client4:
+    image: hw3_python
+    container_name: python_client4
+    command: bash -c "python hw3_problem1.py 'input_files/file-input4.csv' "

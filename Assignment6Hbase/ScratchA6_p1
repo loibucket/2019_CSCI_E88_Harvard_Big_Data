@@ -1,0 +1,39 @@
+ssh -i ~/BigDataHarvard.pem ec2-18-189-44-161.us-east-2.compute.amazonaws.com
+
+create 'vet_visits_hw6','client_info','pet_info'
+
+disable 'vet_visits_hw6'
+drop 'vet_visits_hw6'
+
+scan 'vet_visits_hw6'
+
+scan 'vet_visits_hw6', { TIMERANGE => [1570000000000, 1570807285440] }
+
+scan 'vet_visits_hw6', {ROWPREFIXFILTER => '1570805'}
+
+get 'vet_visits_hw6','1570807112'
+
+get 'vet_visits_hw6', '1570807112', {COLUMN => 'client_info:first_name'}
+
+put 'vet_visits_hw6', '1570807112', 'client_info:first_name', 'Loi'
+put 'vet_visits_hw6', '1570807112', 'client_info:last_name', 'Cheng'
+put 'vet_visits_hw6', '1570807112', 'pet_info:pet_type', 'cat'  
+put 'vet_visits_hw6', '1570807112', 'pet_info:pet_name', 'Mao'
+put 'vet_visits_hw6', '1570807112', 'pet_info:visit_reason', 'phyiscal'
+
+put 'vet_visits_hw6', '1570806137', 'client_info:first_name', 'Grandpa'
+put 'vet_visits_hw6', '1570806137', 'client_info:last_name', 'Cheng'
+put 'vet_visits_hw6', '1570806137', 'pet_info:pet_type', 'dog'  
+put 'vet_visits_hw6', '1570806137', 'pet_info:pet_name', 'Ruff'
+put 'vet_visits_hw6', '1570806137', 'pet_info:visit_reason', 'physical'
+
+put 'vet_visits_hw6', '1570805152', 'client_info:first_name', 'Ling'
+put 'vet_visits_hw6', '1570805152', 'client_info:last_name', 'Ling'
+put 'vet_visits_hw6', '1570805152', 'pet_info:pet_type', 'cat'  
+put 'vet_visits_hw6', '1570805152', 'pet_info:pet_name', 'Moe'
+put 'vet_visits_hw6', '1570805152', 'pet_info:visit_reason', 'scratching a lot'
+
+9/12/19, http://example.com/?url=114,   0.393101408, http://example.com/?url=101  0.402545
+9/12/19 http://example.com/?url=133  0.413317187
+9/12/19 http://example.com/?url=033  0.418867857
+9/12/19 http://example.com/?url=157  0.419289394

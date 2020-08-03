@@ -1,0 +1,35 @@
+create 'query5','1st','2nd','3rd','4th','5th'
+
+put 'query5', '2019-09-12', '1st:url', 'http://example.com/?url=114'
+put 'query5', '2019-09-12', '1st:avg_ttfb', '0.393101408'
+
+put 'query5', '2019-09-12', '2nd:url', 'http://example.com/?url=101'
+put 'query5', '2019-09-12', '2nd:avg_ttfb', '0.402545'
+
+put 'query5', '2019-09-12', '3rd:url', 'http://example.com/?url=133'
+put 'query5', '2019-09-12', '3rd:avg_ttfb', '0.413317187'
+
+put 'query5', '2019-09-12', '4th:url', 'http://example.com/?url=033'
+put 'query5', '2019-09-12', '4th:avg_ttfb', '0.418867857'
+
+put 'query5', '2019-09-12', '5th:url', 'http://example.com/?url=157'
+put 'query5', '2019-09-12', '5th:avg_ttfb', '0.419289394'
+
+----------
+
+put 'query5', '2019-09-13', '1st:url', 'http://example.com/?url=039'
+put 'query5', '2019-09-13', '1st:avg_ttfb', '0.402814286'
+
+put 'query5', '2019-09-13', '2nd:url', 'http://example.com/?url=110'
+put 'query5', '2019-09-13', '2nd:avg_ttfb', '0.429469355'
+
+put 'query5', '2019-09-13', '3rd:url', 'http://example.com/?url=005'
+put 'query5', '2019-09-13', '3rd:avg_ttfb', '0.430635849'
+
+put 'query5', '2019-09-13', '4th:url', 'http://example.com/?url=006'
+put 'query5', '2019-09-13', '4th:avg_ttfb', '0.431381159'
+
+put 'query5', '2019-09-13', '5th:url', 'http://example.com/?url=028'
+put 'query5', '2019-09-13', '5th:avg_ttfb', '0.431906452'
+
+get 'query5','2019-09-12',{COLUMN => '1st'}

@@ -1,0 +1,44 @@
+ssh -i "BigDataHarvard.pem" centos@ec2-18-219-127-173.us-east-2.compute.amazonaws.com
+
+./bin/flume-ng agent -n a1 -c conf -f conf/flume-conf.properties
+
+sudo service httpd start
+
+sudo service httpd stop
+
+sudo service httpd status
+
+cd /var/www/html
+
+curl http://localhost/index.html
+
+http://18.219.127.173/
+
+scp -i "BigDataHarvard.pem" hw6_*py centos@ec2-18-219-127-173.us-east-2.compute.amazonaws.com:.
+
+cd flume/apache-flume-1.9.0-bin/
+./bin/flume-ng agent -n a1 -c conf -f conf/flume-conf-p2.properties
+
+wc -l /var/log/httpd/access_log
+tail /var/log/httpd/access_log
+
+
+sudo service httpd stop
+sudo rm /var/log/httpd/access_log
+sudo touch /var/log/httpd/access_log
+sudo service httpd start
+
+sudo tail /var/log/httpd/access_log
+
+./bin/flume-ng agent -n a1 -c conf -f conf/flume-conf-p2.properties
+
+python hw6_p2_curl.py 20
+
+wc -l *
+
+./bin/flume-ng agent -n a1 -c conf -f conf/flume-conf-p3.properties -Dflume.root.logger=INFO,console
+
+cd /home/centos/flume/apache-flume-1.9.0-bin/
+./bin/flume-ng agent -n a1 -c conf -f conf/flume-conf-p4.properties -Dflume.root.logger=DEBUG,console
+
+

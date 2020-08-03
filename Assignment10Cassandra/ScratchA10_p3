@@ -1,0 +1,32 @@
+CREATE KEYSPACE lab10 WITH REPLICATION = { 'class' : 'SimpleStrategy','replication_factor' : 1 };
+
+CREATE TABLE IF NOT EXISTS lab10.sensor_metrics (
+sensor_id UUID,
+time_hour timestamp,
+sensor_type text,
+reading_time timestamp,
+metric float,
+PRIMARY KEY ((sensor_type, time_hour), reading_time)
+) WITH CLUSTERING ORDER BY (reading_time asc);
+
+
+SELECT url, country, count(*) FROM hw10.hw10_p2
+
+
+SELECT url, country, count(*), AVG(TTFB) FROM hw10.hw10_p2
+WHERE hour = '2019-09-12 05:00:00Z' and 
+country = 'ZW' and 
+url = 'http://example.com/?url=095' and 
+time >= '2019-09-12 05:00:00Z' and time <= '2019-09-12 05:40:00Z';
+
+SELECT * FROM hw10.hw10_p2
+
+SELECT url, country, count(*), AVG(TTFB) FROM hw10.hw10_p2
+WHERE hour = '2019-09-12 01:00:00Z' and 
+country = 'SJ' and 
+url = 'http://example.com/?url=099' and 
+time >= '2019-09-12 01:00:00Z' and time <= '2019-09-12 01:40:00Z';
+
+
+ps -aef | grep cassandra
+kill -9 6409

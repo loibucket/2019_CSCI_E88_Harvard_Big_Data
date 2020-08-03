@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html class="scripts-not-loaded" dir="ltr"   lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&amp;subset=latin-ext&amp;display=swap" rel="stylesheet">
+    <script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  <script>
+//<![CDATA[
+
+!function(){
+  function get(u){document.write('<scr'+'ipt src="'+ u +'"></sc'+'ript>')}
+  var o,s,v;
+  if (!(window.Promise && Object.assign && Object.values && [].find && [].includes && (o={},s=Symbol(),v={},o[s]=v,o[s]===v) && (function f(){}).bind().name==='bound f')) {
+    get("https://du11hjcvx0uqb.cloudfront.net/br/dist/ie11-polyfill-5cf07f7aab.js");
+  }
+  if (!window.fetch) get("https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js");
+}();
+      
+//]]>
+</script>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/favicon-e10d657a73.ico" />
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/apple-touch-icon-585e5d997d.png" />
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/e3cf7d0111052370cfa36b78015ceb19/variables-8391c84da435c9cfceea2b2b3317ff66.css" />
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/common-ebb8b8face.css" />
+  <meta name="apple-itunes-app" content="app-id=480883488" />
+<link rel="manifest" href="/web-app-manifest/manifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#008EE2">
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/assignments-f5bc12342d.css" />
+<link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/tinymce-0c01433900.css" />
+<link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/learning_outcomes-cbba6e8c1e.css" />
+  <link rel="stylesheet" media="all" href="https://instructure-uploads.s3.amazonaws.com/account_18750000000000001/attachments/8706872/theme.min.css" />
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          e.preventDefault()
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+  <script>
+//<![CDATA[
+
+      ;["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/e3cf7d0111052370cfa36b78015ceb19/variables-8391c84da435c9cfceea2b2b3317ff66.js"].forEach(function(src) {
+        var s = document.createElement('script')
+        s.src = src
+        s.async = false
+        document.head.appendChild(s)
+      });
+//]]>
+</script>
+
+
+  <script>
+    INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"iad.rtmp.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[{"name":"YouTube","id":18015,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=youtube","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/youtube_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false,"description":"\u003cp\u003eSearch publicly available YouTube videos. A new icon will show up in your course rich editor letting you search YouTube and click to embed videos in your course material.\u003c/p\u003e\n"},{"name":"Vimeo","id":18016,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=vimeo","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/vimeo_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false,"description":"\u003cp\u003eVimeo is a video sharing website on which users can upload, share, and view videos. The community of Vimeo includes indie, professional, and novice filmmakers.\u003c/p\u003e\n"},{"name":"Course Info","id":20525,"url":"https://canvas-course-info.tlt.harvard.edu/course_info/lti_launch","icon_url":"https://canvas-course-info.tlt.harvard.edu/static/images/course-info.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":false,"description":"\u003cp\u003eA button to insert course info into canvas pages.\u003c/p\u003e\n"}]};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net/br","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/e3cf7d0111052370cfa36b78015ceb19/variables-8391c84da435c9cfceea2b2b3317ff66.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/e3cf7d0111052370cfa36b78015ceb19/variables-8391c84da435c9cfceea2b2b3317ff66.css","https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-b9b4369931.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/default/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.css","https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-1b75701e3a.css"],"current_user_id":"323911","current_user_roles":["user","student"],"current_user_disabled_inbox":false,"files_domain":"cluster208.canvas-user-content.com","DOMAIN_ROOT_ACCOUNT_ID":18750000000000001,"k12":false,"use_responsive_layout":false,"use_rce_enhancements":false,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://canvas.harvard.edu","DEEP_LINKING_LOGGING":null,"SETTINGS":{"open_registration":false,"collapse_global_nav":false,"show_feedback_link":true,"filter_speed_grader_by_student_group":false},"current_user":{"id":"323911","display_name":"Loi Cheng","avatar_image_url":"https://canvas.harvard.edu/images/thumbnails/8397243/cnySfmEmPO1aXpIAlBh3NpPUG20CsJfGxTjZC8oU","html_url":"https://canvas.harvard.edu/about/323911","avatar_is_fallback":false},"page_view_update_url":"/page_views/5ff7b743-65ba-4af6-8760-5dda5a235830?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiNWZmN2I3NDMtNjViYS00YWY2LTg3NjAtNWRkYTVhMjM1ODMwIiwidSI6MTg3NTAwMDAwMDAzMjM5MTEsImMiOiIyMDE5LTEwLTI0VDE4OjIwOjI5LjA4WiJ9.1419DbX9bPlMONIr3BLX0xw8z4Qw15uNAQ6XlNM7hk4","context_asset_string":"course_63150","ping_url":"https://canvas.harvard.edu/api/v1/courses/63150/ping","TIMEZONE":"America/New_York","CONTEXT_TIMEZONE":"America/New_York","LOCALE":"en","BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","COURSE_ID":63150,"RICH_CONTENT_APP_HOST":"rich-content-iad.inscloudgate.net","RICH_CONTENT_SKIP_SIDEBAR":null,"JWT":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSW4wLi5JcUhLSzNiUkJ0OVFuTzlFLllhcXZ5TVJXcmRwWUduNmRZUVZBdVllMkNDZEJnUDM1WV82NWx2b3o1a2l4aXNkaE9GVjZnNlJyNENyQWVEYXFCMkh6UVd5ZHJ3RGJkZXBKQ3g4bHBxYUY1V1BLZVRZNFM3ZlAzdUV6bjhZLURZTlFTNC1XRkdGeDduRkE1S0F3d3NrYThUY1BhUERRc0E2X1k3TVU1d3pqT1VrbUJ3Y29LUnNMLVV2UXYxcl9BR2plRGUzZFRiNVVxcXM5SVNSRzJBNVJndGlsQWV0NS0wX1o3RVU1d0kzTmpjQTQ0ZnpEY2l2Y1lIZEdaQU82OHJhaXkzVjh0MXoyUU11UkVFU1lqYUVaNW1xWWVGMm9KVnFnQjBuYUNRbGNfMjI1T0h0NHlmazhVWWJNSFBMZ200VTI2eHcyOEVqVkN5Z2NJemdSckFMSkx0NU8tNWR2TmJTaUpPWEtDeWZfMloxYmpBVTdxWUlLZ2hWdnB1d2pVMzl2US1LUkFpZElhVXVVM19jejZaRTFIOGRfVW5MekQtdEdVTmtPd0Z4UFh4bi1QSWF1TU9RRjBHelJ1RXlJTUFOTUdKcTZpTVpsdW5QeWRmaklrYnV3LXNKalpYVFVMY1hqb3YyNnJNSnNleGd0UkhNZWRiVDNYbWxkejlDbHpNXzRtanpwSHFnSzAzbHFxQW9VQ09nSFVQcFRqUlJQVEI2Yml6czBWcHZFTUd3M0I2WHhOQWtranIta250SElxSmVxbk9WZ2VHZS0tYzJCZld0SEMxemlPdGlCMGhXM2VyTG11Y1VGVjlCbFBRUTMyUGNKaTdfclV6QlNDaWRRMm4weVJsUzlXenlWbm0zRXRpUTQzeEtyLVNWcEI2MlB5MVg0Sl8tRlI3cmtiOHY0cEY4R3k3TDZQY0cyMVRwOTZhVVZRbmh5SXJSeGktOVFxck95bXFqcm5JeVJJNmZlNFgzRWE4SXpBSXJQWnp0SzQ3alBnR0dxcEwzVlhxMzBiWTFELWo4bHBiaGc0Sk9heXFMT0g3dFY5ZVJZRTFOTzFmQWNGdlNhOHZjbm96Y3hfMXB0aldFVlNBLnM4N2xRY2pTOFRlYktBZE9OcXRrR2c=","RICH_CONTENT_CAN_UPLOAD_FILES":false,"RICH_CONTENT_FILES_TAB_DISABLED":true,"ASSIGNMENT_ID":296813,"PREREQS":{},"EULA_URL":null,"EXTERNAL_TOOLS":[],"PERMISSIONS":{"context":{"read_as_admin":false,"manage_assignments":false},"assignment":{"update":false,"submit":true}},"ROOT_OUTCOME_GROUP":{"id":"47062","title":"Principles of Big Data Processing","vendor_guid":null,"url":"/api/v1/courses/63150/outcome_groups/47062","subgroups_url":"/api/v1/courses/63150/outcome_groups/47062/subgroups","outcomes_url":"/api/v1/courses/63150/outcome_groups/47062/outcomes","can_edit":false,"import_url":"/api/v1/courses/63150/outcome_groups/47062/import","context_id":"63150","context_type":"Course","description":null},"SIMILARITY_PLEDGE":null,"SUBMIT_ASSIGNMENT":{"ALLOWED_EXTENSIONS":[],"ID":296813,"GROUP_ID_FOR_USER":null},"badge_counts":{"submissions":2},"notices":[],"active_context_tab":"assignments"};
+  </script>
+
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/America/New_York-c3226761e3.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/America/New_York-c3226761e3.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/en_US-80a0ce259b.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/main-e-9d86ad377e.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+
+      ;["https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/America/New_York-c3226761e3.js", "https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/America/New_York-c3226761e3.js", "https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/en_US-80a0ce259b.js", "https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/main-e-9d86ad377e.js"].forEach(function(src) {
+        var s = document.createElement('script')
+        s.src = src
+        s.async = false
+        document.head.appendChild(s)
+      });
+//]]>
+</script><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/0-c-4e3664802e.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/1-c-004cebe213.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/2-c-23fc28df5f.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/3-c-18321a8b32.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/5-c-3f30384c68.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/4-c-06f0c9766c.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/6-c-51c65a98a7.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/7-c-206f283ce2.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/8-c-2fb95f11aa.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/9-c-82d9077f37.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/10-c-bfff04cd50.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/12-c-8aa5119042.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/21-c-bd1a5aa7c8.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/20-c-9f986cbca1.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/25-c-4db64b5e3e.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/32-c-3e4c0d3af1.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/40-c-5cd103852a.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/47-c-8f19d4e128.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/64-c-1a6533e039.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/59-c-dff57b0c9b.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/75-c-f3ad40264e.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/109-c-9edc4e3a5d.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/assignment_show-c-07041bc3de.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/13-c-6ce40ca933.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/14-c-912414293a.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/19-c-a8dd17d137.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/17-c-dcfb160bc4.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/18-c-4066b102b3.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/23-c-df106e11ce.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/28-c-37e3a55263.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/36-c-5780e39c28.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/41-c-6e35dfcf58.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/96-c-793df07297.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/107-c-bd176b6027.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/133-c-5456288d08.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/131-c-de172163bf.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/submit_assignment-c-d11e03e618.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/11-c-2dcb12e140.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/15-c-2fba97844e.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/26-c-1dfeb737bc.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/33-c-be89cca197.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/35-c-3833b3ef39.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/38-c-93eee45175.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/56-c-db2bbf9430.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/60-c-212646c40b.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/67-c-5700841ce1.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/78-c-d310557bde.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/93-c-3528fc37b5.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/110-c-d578526037.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/edit_rubric-c-566e0664e2.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/219-c-caa1a98474.js" as="script" type="text/javascript"><link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/navigation_header-c-22b15bf805.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('assignment_show');
+(window.bundles || (window.bundles = [])).push('submit_assignment');
+(window.bundles || (window.bundles = [])).push('edit_rubric');
+(window.bundles || (window.bundles = [])).push('navigation_header');
+//]]>
+</script>
+  <title>Assignment 8</title>
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', "UA-9138420-1", 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+<body class="with-left-side course-menu-expanded with-right-side assignments primary-nav-expanded context-course_63150">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder"></div>
+
+<div id="application" class="ic-app">
+  
+  <header id="header" class="ic-app-header no-print ">
+    <a href="#content" id="skip_navigation_link">Skip To Content</a>
+      <div role="region" class="ic-app-header__main-navigation" aria-label="Global Navigation">
+        <div class="ic-app-header__logomark-container">
+          <a href="https://canvas.harvard.edu/" class="ic-app-header__logomark">
+            <span class="screenreader-only">Dashboard</span>
+          </a>
+        </div>
+        <ul id="menu" class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_profile_link" role="button" href="/profile" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <div class="ic-avatar ">
+                    <img src="https://canvas.harvard.edu/images/thumbnails/8397243/cnySfmEmPO1aXpIAlBh3NpPUG20CsJfGxTjZC8oU" alt="Loi Cheng" />
+                  </div>
+                </div>
+                <div class="menu-item__text">
+                  Account
+                </div>
+              </a>
+            </li>
+          <li class="ic-app-header__menu-list-item ">
+            <a id="global_nav_dashboard_link" href="https://canvas.harvard.edu/" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z" /></svg>
+
+              </div>
+              <div class="menu-item__text">Dashboard</div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+            <a id="global_nav_courses_link" role="button" href="/courses" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Courses
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_calendar_link" href="/calendar" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Calendar
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_conversations_link" href="/conversations" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container">
+                <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"/></svg>
+</span>
+                <span class="menu-item__badge" style="display: none">0</span>
+              </div>
+              <div class="menu-item__text">
+                Inbox
+              </div>
+            </a>
+          </li>
+            
+
+
+          <li class="ic-app-header__menu-list-item">
+           <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+              <div class="menu-item-icon-container" role="presentation">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-help" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100,127.88A11.15,11.15,0,1,0,111.16,139,11.16,11.16,0,0,0,100,127.88Zm8.82-88.08a33.19,33.19,0,0,1,23.5,23.5,33.54,33.54,0,0,1-24,41.23,3.4,3.4,0,0,0-2.74,3.15v9.06H94.42v-9.06a14.57,14.57,0,0,1,11.13-14,22.43,22.43,0,0,0,13.66-10.27,22.73,22.73,0,0,0,2.31-17.37A21.92,21.92,0,0,0,106,50.59a22.67,22.67,0,0,0-19.68,3.88,22.18,22.18,0,0,0-8.65,17.64H66.54a33.25,33.25,0,0,1,13-26.47A33.72,33.72,0,0,1,108.82,39.8ZM100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65" transform="translate(-5.2 -5.2)"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Help
+              </div>
+</a>          </li>
+        </ul>
+      </div>
+      <div class="ic-app-header__secondary-navigation">
+        <ul class="ic-app-header__menu-list">
+          <li class="menu-item ic-app-header__menu-list-item">
+            <button
+              id="primaryNavToggle"
+              class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle"
+              aria-label="Minimize global navigation"
+              title="Minimize global navigation"
+            >
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"/>
+</svg>
+
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    <div id="global_nav_tray_container"></div>
+  </header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide Courses Navigation Menu" title="Hide Courses Navigation Menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+          <div class="ic-app-crumbs">
+        <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="/"><span class="ellipsible">      <i class="icon-home"
+         title="My Dashboard">
+        <span class="screenreader-only">My Dashboard</span>
+      </i>
+</span></a></li><li><a href="/courses/63150"><span class="ellipsible">CSCI E-88 (15417)</span></a></li><li><a href="/courses/63150/assignments"><span class="ellipsible">Assignments</span></a></li><li><a href="https://canvas.harvard.edu/courses/63150/assignments/296813"><span class="ellipsible">Assignment 8</span></a></li></ul></nav>
+        </div>
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side"
+          class="ic-app-course-menu list-view-a11y-left-menu-flag"
+          style="display: block"
+          >
+              <span id="section-tabs-header-subtitle" class="ellipsis">2019-2020 Fall</span>
+            <nav role="navigation" aria-label="Courses Navigation Menu"><ul id="section-tabs"><li class="section"><a href="/courses/63150" title="Home" class="home">Home</a></li><li class="section"><a href="/courses/63150/announcements" title="Announcements" class="announcements">Announcements</a></li><li class="section"><a href="/courses/63150/assignments" title="Assignments" class="assignments active">Assignments</a></li><li class="section"><a href="/courses/63150/external_tools/53788" title="Lecture Video" class="context_external_tool_53788">Lecture Video</a></li><li class="section"><a href="/courses/63150/external_tools/52902" title="Piazza" class="context_external_tool_52902">Piazza</a></li><li class="section"><a href="/courses/63150/assignments/syllabus" title="Syllabus" class="syllabus">Syllabus</a></li><li class="section"><a href="/courses/63150/quizzes" title="Quizzes" class="quizzes">Quizzes</a></li><li class="section"><a href="/courses/63150/external_tools/34970" title="Student Resources" class="context_external_tool_34970">Student Resources</a></li></ul></nav>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+<style>
+  #right-side-wrapper {
+    height: 100%;
+  }
+</style>
+
+
+
+<div id="assignment_show" class="assignment content_underline_links">
+    <!--Student View-->
+    <div class='assignment-title'>
+      <div class='title-content'>
+        <h1 class="title">
+          Assignment 8
+        </h1>
+      </div>
+      <div class='assignment-buttons'>
+        
+
+        <a role="button" class="Button Button--primary submit_assignment_link " href="#">Submit Assignment</a>
+      </div>
+    </div>
+    <ul class='student-assignment-overview'>
+      <li>
+        <span class='title'>Due</span>
+        <span class='value'>
+          <span class="date_text">
+                <span class="display_date">Tuesday</span> by 
+                <span class="display_time">12:01pm</span>
+          </span>
+        </span>
+      </li>
+      <li>
+        <span class='title'>Points</span>
+        <span class='value'>100</span>
+      </li>
+        <li>
+          <span class='title'>Submitting</span>
+          <span class='value'>a file upload</span>
+        </li>
+      
+  <li>
+    <span class="title">Available</span>
+    <span class="value">
+        Oct 22 at 12am - Oct 31 at 12:01pm
+        <span style="font-size: 0.8em;">10 days</span>
+    </span>
+  </li>
+
+      <div class="clear"></div>
+    </ul>
+
+  <div class="clear"></div>
+
+
+  <div class="clear"></div>
+
+  <div class="description user_content student-version"><p><strong>Assignment 8: Messaging Tier with Kafka</strong></p>
+<p><span style="font-size: 10pt;">Please use the following template for your submission: <a class="instructure_file_link instructure_scribd_file" title="Assignment8_Submission Template.docx" href="/courses/63150/files/8728650/download?wrap=1" data-api-endpoint="https://canvas.harvard.edu/api/v1/courses/63150/files/8728650" data-api-returntype="File">Assignment8_Submission Template.docx</a></span></p>
+<p><span style="font-weight: 400; font-size: 10pt;">In this assignment, we are trying to build another part of a Big Data pipeline - collection tier plus messaging tier.</span></p>
+<p><span style="font-weight: 400; font-size: 10pt;">For a 3-node Kafka cluster setup:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">we provide full instructions on how to do this using Docker compose - in the Lab</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">you can do the same on AWS EC2 nodes instead - it is not a very straightforward process, so here are a few pointers for that setup:</span></li>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">make sure each node has a distinct broker.id, has privateIPs to talk to Zookeeper, but uses publicIPs as advertised hosts in the server.properties for each node</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">myid file for zookeeper should have the same id as the broker.id</span></li>
+</ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">you can elect to run a 1-node Kafka cluster installed locally on your laptop - the easiest option - but you will be <span style="background-color: #ffff99;"><strong>deducted 20 points</strong></span> from your total HW points</span></li>
+</ul>
+<p> </p>
+<p><strong><span style="font-size: 10pt;">Problem 1: [Points: 20] Basic Kafka setup</span></strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Create a 3-node Kafka cluster using docker compose ( as demoed in the Lab)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Bring it up using <span style="color: #993366;"><em>--scale kafka=3</em></span></span></li>
+<li style="font-weight: 400;"><span style="font-size: 10pt;"><span style="font-weight: 400;">Connect to Running kafka container-1 using `</span><strong><span style="color: #993366;"><em>kafka exec -it container-1name bash</em></span></strong><i><span style="font-weight: 400;">` </span></i><span style="font-weight: 400;">command</span></span></li>
+<li style="font-weight: 400;">
+<span style="font-weight: 400; font-size: 10pt;">Once you are connected to the running kafka container issue kafka-topics --describe command </span><span style="font-size: 10pt;">and verify there are no topics in this cluster yet</span>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Create a topic "problem1" with 2 partitions and replication factor = 2</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Describe the cluster and show its state via kafka-topics --describe command</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Start a kafka console consumer in a new terminal and leave it running </span></li>
+</ul>
+<p><span style="color: #993366;"><em><span style="font-size: 10pt;"><strong><span style="font-weight: 400;">docker exec  kafka_kafka_1 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic</span> <span style="font-weight: 400;">problem1</span></strong></span></em></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Open another terminal and start kafka console producer in an interactive mode and try sending some messages. Messages sent in producer should show up in console consumer</span></li>
+</ul>
+<p><span style="color: #993366;"><em><span style="font-size: 10pt;"><strong><span style="font-weight: 400;">docker exec  -it kafka_kafka_1 kafka-console-producer.sh --bootstrap-server localhost:9092 --topic</span> <span style="font-weight: 400;">problem1</span></strong></span></em></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Examine kafka commit logs, by using the kafka.tools.DumpLogSegments tool , for each partition of the "problem1" topic</span></li>
+</ul>
+<p> </p>
+<p><span style="font-weight: 400; font-size: 10pt;"><strong>Problem 2: [Points: 25] Flume + Kafka integration</strong> </span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Use your Web server + Flume setup you did for HW5 Problem 2 [ 'tail -f' source, memory or file channel] </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Create a new topic, "problem2" , with 2 partitions</span></li>
+<li style="font-weight: 400;"><span style="font-size: 10pt;"><span style="font-weight: 400;">Connect to Running kafka container-1 using `</span><i><span style="font-weight: 400;"><span style="color: #993366;">kafka exec -it container-1name bash</span>` </span></i><span style="font-weight: 400;">command</span></span></li>
+<li style="font-weight: 400;">
+<span style="font-weight: 400; font-size: 10pt;">Run `<span style="color: #993366;"><em>docker ps -a</em></span>` to look at running containers and get the local port that is forwarded to kafka-1 9092 port </span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">For example 0.0.0.0:32781-&gt;9092/tcp) means that local port is 32781</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Add Kafka Sink to your Flume - to push events into the "problem2" topic </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Make sure your flume kafka sink points to localhost:32781</span></li>
+<li style="font-weight: 400;"><span style="font-size: 10pt;"><span style="font-weight: 400;">Start your event/request generation script developed in HW5/P2 to generate CURL requests to the web app </span><span style="font-weight: 400;"> [or however you were generating load to your web server]</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Start a Kafka console consumer for "problem2" topic - verify you are getting your web server logs</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Add Flume's UUID Interceptor - to add UUID to each event</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Verify you are getting events with UUIDs now in Kafka [hint: UUIDs are not going to be added to the event payload, but rather to event headers ….]</span></li>
+</ul>
+<p><span style="color: #993366;"><em><span style="font-weight: 400; font-size: 10pt;">./bin/kafka-console-consumer.sh --new-consumer --bootstrap-server kafka-1:9092 --topic topic1 --property print.key=true --property key.separator="-"</span></em></span></p>
+<p> </p>
+<p><strong><span style="font-size: 10pt;">Problem 3 [Points: 30]: Programming with Kafka APIs</span></strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-size: 10pt;"><span style="font-weight: 400;">Create a new topic, "problem3",  </span><strong>with 3 partitions</strong></span></li>
+<li style="font-weight: 400;">
+<span style="font-weight: 400; font-size: 10pt;">Using Kafka API, create a new Problem3Producer application that generates and sends events to the "problem3" topic - generate the same type of log events we've worked with so far, plus add a UUID: </span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">one event is one line in the format: <em><strong>&lt;uuid&gt; &lt;timestamp&gt; &lt;url&gt; &lt;userId&gt;</strong></em></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">make sure you have at least 3 different userIDs</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Verify your producer works correctly by receiving generated events via Kafka console consumer</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Using Kafka APIs, create a Problem3Consumer (single-threaded is OK), with the "p3consumer" consumer group.id,  that listens to the "problem3" topic - demonstrate that it receives events generated by the Problem3Producer</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">For each event received, the Problem3Consumer should print out its offset, partition number, event key and event body</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Demonstrate that the Problem3Consumer receives events from all 3 partitions and they are equally distributed</span></li>
+</ul>
+<p> </p>
+<p><strong><span style="font-size: 10pt;">Problem 4: [Points: 25] Kafka consumer groups </span></strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Building up on Problem 3's setup: start a second instance of the Problem3Consumer, with the same consumer group ID , 'p3consumer'</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Demonstrate how partitions are re-balanced between the two consumer instances - which partitions are processed by which instance now?</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Start two more instances of the Problem3Consumer with the same group ID - to the total of 4 instances now. Demonstrate the partition re-balancing and explain the results. Which instances are processing which partitions, if any?</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Stop two instances of the Problem3Consumer - demonstrate the partition re-balancing again</span></li>
+</ul>
+<p> </p>
+<p><strong><span style="font-size: 10pt;">Bonus Problem A: [+10] partitioning by userID</span></strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Create a new ProblemAProducer, by modifying Problem3Producer, to send events to Kafka partitioned based on the userIDs: </span></li>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Events with the same userID should go to the same partition number</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Make sure that there is at least one userID corresponding to each partition (you have 3 partitions, remember)</span></li>
+</ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Start your  Problem3Consumer and verify that the events for the same userID are received from the same partition</span></li>
+</ul>
+<p> </p>
+<p><strong><span style="font-size: 10pt;">Bonus Problem B: [+15] ISR or not ISR?</span></strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">use the same 3-node Kafka cluster setup (either in AWS or Docker)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Create a topic, "problemb", with <strong>4 partitions and replication factor 2</strong></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Examine the state of the cluster and show how all replicas are spread over the cluster nodes - show all ISRs</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Using console producer send a few events to the "problemb" topic; verify you have received them using the console consumer</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Stop Kafka on one of the nodes, wait for a few seconds - show the state of the cluster now, and all ISRs of the "problemb" topic</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">Run console producer and consumer again, see if you can still send/receive messages</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; font-size: 10pt;">re-start Kafka on that node - observe how fast the cluster gets into the full ISR state</span></li>
+</ul>
+<p> </p></div>
+
+
+  <div style="display: none;">
+    <span class="timestamp">1572364860</span>
+    <span class="due_date_string">10/29/2019</span>
+    <span class="due_time_string">12:01pm</span>
+  </div>
+</div>
+
+
+  
+<div style="display: none;" id="submit_assignment" data-context_code="course_63150" data-asset_string="assignment_296813">
+  <div class="content" id="submit_assignment_tabs">
+    <ul>
+        <li><a href="#submit_online_upload_form" class="submit_online_upload_option">File Upload</a></li>
+        <li><a href="#submit_google_doc_form" class="submit_online_url_option">Google Doc</a></li>
+    </ul>
+      
+<form id="submit_online_upload_form" class="submit_assignment_form" enctype="multipart/form-data" action="/courses/63150/assignments/296813/submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="plBrleWUyWBCT1rFp1+ULbhA5LBKUV6kUlFjPagLaNTFexz4p/KwK3J6Of3FDt8C6yq30RsaD/YYaCkNmGEpvw==" />
+    <input value="online_upload" type="hidden" name="submission[submission_type]" id="submission_submission_type" />
+    <input value="" id="submission_attachment_ids" type="hidden" name="submission[attachment_ids]" />
+    <input id="eula_agreement_timestamp" type="hidden" name="submission[eula_agreement_timestamp]" />
+    <table class="formtable" style="width: 100%;">
+      <tr>
+        <td colspan="2">
+          Upload a file, or choose a file you&#39;ve already uploaded.
+            
+        </td>
+      </tr><tr>
+        <td><label id="attachmentLabel" for="attachment_uploaded_data">File:</label></td>
+        <td>
+          <button class="Button Button--link add_another_file_link">
+            <i class="icon-add" aria-hidden="true"></i>
+            Add Another File
+          </button>
+          <div id="submission_attachment_blank" class="submission_attachment" style="display: none;">
+            <input aria-labelledby="attachmentLabel" type="file" name="attachments[-1][uploaded_data]" class="input-file"/>
+            <a href="#" class="remove_attachment_link no-hover" style="display: none;"><i class="icon-end" aria-hidden="true"></i><span class="screenreader-only">remove empty attachment</span></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="font-size: 0.8em;">
+          <button class="Button Button--link toggle_uploaded_files_link">Click here to find a file you&#39;ve already uploaded</button><br/>
+          <div id="uploaded_files" style="display: none;" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea class="submission_comment_textarea" placeholder="Comments..." title="Additional comments" name="submission[comment]" id="submission_comment">
+</textarea>
+        </td>
+      </tr>
+      
+
+      
+
+      <tr>
+        <td colspan="2" class='button-container'>
+          <button type="button" class='cancel_button btn'>Cancel</button>
+          <button type="submit" class="btn btn-primary" id="submit_file_button">Submit Assignment</button>
+        </td>
+      </tr><tr style="display: none;">
+        <td colspan="2" style="text-align: center;">
+          Submitting... <img src=""/>
+        </td>
+      </tr>
+    </table>
+</form>
+
+
+
+    <style>
+    #google_docs_tree li.folder {
+      cursor: pointer;
+    }
+    #google_docs_tree li.file {
+      cursor: pointer;
+      -moz-border-radius: 3px;
+      width: 80%;
+      padding-right: 20px;
+    }
+    #google_docs_tree li.file:hover {
+      background-color: #eee;
+    }
+    ul.instTree li span.active {
+      background: none;
+    }
+    #google_docs_tree li.file.leaf.active {
+      background-color: #ddd;
+    }
+    #google_docs_tree li.file .filename {
+      float: left;
+      max-width: 98%;
+    }
+    #google_docs_tree li.file .popout {
+      float: right;
+    }
+    </style>
+        <div id="submit_google_doc_form">
+          Before you can submit assignments directly from Google Drive you need to authorize Canvas to access your Google Drive account:
+          <div style="font-size: 1.1em; text-align: center; margin: 10px;">
+            <a class="btn" href="https://canvas.harvard.edu/oauth?return_to=https%3A%2F%2Fcanvas.harvard.edu%2Fcourses%2F63150%2Fassignments%2F296813%23submit_google_doc_form&amp;service=google_drive">Authorize Google Drive Access</a>
+          </div>
+        </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+  <div id="rubrics" style="margin-bottom: 10px;">
+    <div style="display: none;" id="rubric_parameters">
+      <input type="hidden" name="rubric_association[association_type]" value="Assignment"/>
+      <input type="hidden" name="rubric_association[association_id]" value="296813"/>
+      <input type="hidden" name="rubric_association[purpose]" value="grading"/>
+    </div>
+    
+<div id="rubric_long_description_dialog" style="display: none;">
+  <div class="editing">
+    <form id="edit_criterion_form" class="no-margin-bottom">
+      <div>
+        <label class="rating_form_label">Description
+          <textarea class="description" rows="1" name="description"></textarea>
+        </label>
+      </div>
+      <div>
+        <label class="rating_form_label">Long Description
+          <textarea class="long_description" rows="4" name="long_description"></textarea>
+        </label>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn save_button btn-primary">Update Criterion</button>
+      </div>
+    </form>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div
+    class="criterion_description"
+    style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;"
+    tabindex="-1"
+  ></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Additional Comments:
+    </label>
+    <textarea
+      id="criterion_comments_textarea"
+      class="criterion_comments"
+      name="criterion_comments"
+      style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update Comments</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Additional Comments:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+<div id="rubric_rating_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+    <span id="edit_rating_form_criterion_description"></span>
+  </div>
+  <div class="editing">
+    <form id="edit_rating_form" class="no-margin-bottom">
+      <div class="toggle_for_hide_points">
+        <div><label id='rating_form_score_label' class="rating_form_label">Rating Score</label></div>
+        <span id='rating_form_max_score_label' hidden>Rating max score</span>
+        <input id="points" aria-labelledby="rating_form_score_label" type="text" size="2" name="points" class="no-margin-bottom span1" />
+        <span class="range_rating">to >
+          <input aria-label="Rating min score" type="text" size="2" name="min_points" class="no-margin-bottom span1 min_points" placeholder="min"/>
+        </span>pts
+      </div>
+      <div>
+        <label for="rating_form_title" class="rating_form_label">Rating Title</label>
+        <input id="rating_form_title" type="text" class="rating_description" style="width: 90%;" name="description"/>
+      </div>
+      <div>
+        <label for="rating_form_description" class="rating_form_label">Rating Description</label>
+        <textarea id="rating_form_description" rows="4" style="width: 90%;" class="rating_long_description" name="rating_long_description" form="edit_rating_form"></textarea>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn btn-primary save_button ok_button">Update Rating</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </div>
+  
+<div
+  class="rubric_container rubric  "
+  id="default_rubric"
+  style="display: none;"
+>
+  <div class="screenreader-only"><h2>Rubric</h2></div>
+  <div class="rubric_title">
+    <div style="display: none;" class="links displaying pull-right">
+      <a
+        href="/courses/63150/rubrics/%7B%7B%20id%20%7D%7D"
+        class=" edit_rubric_link no-print no-hover"
+        style=""
+        title="Edit Rubric"
+        aria-label="Edit Rubric"
+        role="button"
+      ><i class="icon-edit standalone-icon"></i></a>
+      <a
+        href="https://canvas.harvard.edu/search/rubrics?q="
+        class="find_rubric_link no-print no-hover"
+        style=""
+        title="Find Another Rubric"
+        aria-label="Find Another Rubric"
+        role="button"
+      ><i class="icon-search standalone-icon"></i></a>
+        <a
+          href="/courses/63150/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D"
+          class="delete_rubric_link no-print no-hover"
+          style=""
+          title="Delete Rubric"
+          aria-label="Delete Rubric"
+          role="button"
+        ><i class="icon-trash standalone-icon"></i></a>
+      <div style="display: none;">
+        <div class="use_for_grading">&nbsp;</div>
+        <div class="free_form_criterion_comments">&nbsp;</div>
+        <div class="hide_score_total">&nbsp;</div>
+        <div class="hide_outcome_results">&nbsp;</div>
+        <div class="hide_points">&nbsp;</div>
+        <div class="rubric_association_id">&nbsp;</div>
+          <div class="user_id">&nbsp;</div>
+        <div class="assessment_type"></div>
+        <a href="/courses/63150/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D/assessments/%7B%7B%20assessment_id%20%7D%7D" rel="nofollow" class="edit_assessment_link">&nbsp;</a>
+        <a href="/courses/63150/rubrics/%7B%7B%20rubric_id%20%7D%7D" class="edit_rubric_url">&nbsp;</a>
+          <a href="/courses/63150/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url">&nbsp;</a>
+      </div>
+    </div>
+    <div style="float: right; font-size: 0.8em; display: none;" class="links displaying locked">
+      <span style="">Can&#39;t change a rubric once you&#39;ve started using it.</span>
+        <a href="/courses/63150/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url" style="display: none;">&nbsp;</a>
+    </div>
+
+    <div class="editing" style="float: right;">
+      <a href="https://canvas.harvard.edu/search/rubrics?q=" class="find_rubric_link icon-search" style="" title="Find Existing Rubric">Find a Rubric</a>
+    </div>
+    <div class="editing" style="text-align: left">
+      <label for="rubric-title">Title:</label>
+      <input id="rubric-title" type="text" class="no-margin-bottom" name="title" value="Some Rubric" style="width: 200px;" maxlength="255" aria-label="Title:"/>
+      <a href="https://canvas.harvard.edu/search/rubrics?q=" style="display: none;"><img alt="" src="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/find-6164443e2a.png" /> Find Rubric</a>
+    </div>
+    <div class="displaying">
+      <span class="title" tabindex="-1">Title</span>
+    </div>
+    <div class="has-assessments-warning" style="display: none;">
+      You&#39;ve already rated students with this rubric.  Any major changes could affect their assessment results.
+    </div>
+  </div>
+<table class="rubric_table">
+<caption>
+  <div class="screenreader-only">
+    <span class="title">Title</span>
+  </div>
+</caption>
+<thead>
+  <tr>
+    <th scope="col">Criteria</th>
+    <th scope="col">Ratings</th>
+    <th scope="col" class="toggle_for_hide_points ">
+      Pts
+    </th>
+  </tr>
+</thead>
+<tbody>
+  
+<tr id="criterion_blank" class="criterion blank  " style="display: none;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a Learning Outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div style="display: none;" class="long_description_holder editing empty">
+          <a href="#" class="long_description_link hidden">view longer description</a>
+          <textarea class="long_description" aria-label="Long Description" style="display: none;"></textarea>
+        </div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range" /></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tr>
+          <td id="rating_blank"
+              class="rating edge_rating
+                
+                "
+          >
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="#" class="delete_rating_link"><i class="icon-trash standalone-icon" ></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to ><span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">Full Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_blank_2"
+              class="rating edge_rating
+                infinitesimal
+                "
+          >
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="#" class="delete_rating_link"><i class="icon-trash standalone-icon" ></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to ><span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">No Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input
+              type="text"
+              aria-label="Points"
+              value="5"
+              class="criterion_points span1 no-margin-bottom"
+            />
+           pts
+      </span><br />
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br />
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="#" class="no-hover criterion_comments_link" title="Additional Comments">
+          <img alt="Additional Comments" src="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/rubric_comment-ddae8546ab.png" />
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+  <tr class="summary">
+    <td colspan="4">
+      <div class="total_points_holder toggle_for_hide_points "
+        style="float: right; ">
+        <span>Total Points:
+            <span class="rubric_total">
+              5
+            </span>
+ <span class="assessing">out of 5</span>        </span>
+      </div>
+      <div class="editing pull-left">
+        <span id="add_criterion_holder" class="criterion_link"></span>
+      </div>
+      <div class="clear"></div>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<table style="display: none;">
+  <tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating" />
+          <label for="rubric_custom_rating">I&#39;ll write free-form comments when assessing students</label>
+        </div>
+          <div class="hide_points" style="">
+            <input type="checkbox" id="hide_points" class="hide_points_checkbox" />
+            <label for="hide_points">Remove points from rubric</label>
+          </div>
+          <div class="hide_outcome_results" style="">
+            <input type="checkbox" id="hide_outcome_results" class="hide_outcome_results_checkbox" />
+            <label for="hide_outcome_results">Don&#39;t post Outcomes results to Learning Mastery Gradebook</label>
+          </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox" />
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox" />
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create Rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</table>
+
+
+  <div id="assignment_external_tools"></div>
+
+  
+
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+<div id="sidebar_content">
+
+
+</div>
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">5ff7b743-65ba-4af6-8760-5dda5a235830</div>
+    </div>
+  <div id='aria_alerts' class='hide-text affix' role="alert" aria-live="assertive"></div>
+  <div id='StudentTray__Container'></div>
+  
+
+
+
+<script>
+//<![CDATA[
+
+      ;["https://instructure-uploads.s3.amazonaws.com/account_18750000000000001/attachments/8706871/theme.min.js", "https://instructure-uploads.s3.amazonaws.com/account_18750000000000001/attachments/8533143/BzlueGradebook.js"].forEach(function(src) {
+        var s = document.createElement('script')
+        s.src = src
+        s.async = false
+        document.head.appendChild(s)
+      });
+//]]>
+</script>
+
+</div> <!-- #application -->
+</body>
+</html>

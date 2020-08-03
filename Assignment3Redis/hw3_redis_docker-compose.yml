@@ -1,0 +1,17 @@
+#hw3_redis_docker-compose.yml
+version: '3'
+
+services:
+
+  redis_server:
+    image: redis
+    container_name: redis_server
+    command: redis-server --requirepass 1234
+    ports:
+    - "6379:6379"
+  
+  redis_client:
+    image: redis
+    container_name: redis_client
+    depends_on:
+      - redis_server

@@ -1,0 +1,94 @@
+
+
+----------
+
+create 'query1','count'
+put 'query1', '2019-09-12:13', 'count:unique_urls', '185'
+put 'query1', '2019-09-12:14', 'count:unique_urls', '186'
+put 'query1', '2019-09-12:15', 'count:unique_urls', '185'  
+put 'query1', '2019-09-12:16', 'count:unique_urls', '190'
+put 'query1', '2019-09-12:17', 'count:unique_urls', '189'
+get 'query1','2019-09-12:16'
+
+
+----------
+
+create 'query2and3_date','query2','query3'
+
+put 'query2and3_date', '2019-09-12:00:http://example.com/?url=001', 'query2:count_unique_visitors', '3'
+put 'query2and3_date', '2019-09-12:00:http://example.com/?url=001', 'query3:count_clicks', '3'
+
+put 'query2and3_date', '2019-09-12:02:http://example.com/?url=003', 'query2:count_unique_visitors', '1'
+put 'query2and3_date', '2019-09-12:02:http://example.com/?url=003', 'query3:count_clicks', '1'
+
+put 'query2and3_date', '2019-09-12:02:http://example.com/?url=004', 'query2:count_unique_visitors', '3'
+put 'query2and3_date', '2019-09-12:02:http://example.com/?url=004', 'query3:count_clicks', '3'
+
+put 'query2and3_date', '2019-09-12:02:http://example.com/?url=005', 'query2:count_unique_visitors', '4'
+put 'query2and3_date', '2019-09-12:02:http://example.com/?url=005', 'query3:count_clicks', '5'
+
+put 'query2and3_date', '2019-09-12:02:http://example.com/?url=006', 'query2:count_unique_visitors', '10'
+put 'query2and3_date', '2019-09-12:02:http://example.com/?url=006', 'query3:count_clicks', '10'
+
+get 'query2and3_date', '2019-09-12:02:http://example.com/?url=004', {COLUMN => 'query2:count_unique_visitors'}
+get 'query2and3_date', '2019-09-12:02:http://example.com/?url=004', {COLUMN => 'query3:count_clicks'}
+
+scan 'query2and3_date', {ROWPREFIXFILTER => '2019-09-12:02', COLUMN => 'query2:count_unique_visitors'}
+scan 'query2and3_date', {ROWPREFIXFILTER => '2019-09-12:02', COLUMN => 'query3:count_clicks'}
+scan 'query2and3_date', {STARTROW => '2019-09-12:00', ENDROW => '2019-09-12:02'}
+
+----------
+
+create 'query2and3_url','query2','query3'
+
+put 'query2and3_url', 'http://example.com/?url=001:2019-09-12:00', 'query2:count_unique_visitors', '3'
+put 'query2and3_url', 'http://example.com/?url=001:2019-09-12:00', 'query3:count_clicks', '3'
+
+put 'query2and3_url', 'http://example.com/?url=003:2019-09-12:02', 'query2:count_unique_visitors', '1'
+put 'query2and3_url', 'http://example.com/?url=003:2019-09-12:02', 'query3:count_clicks', '1'
+
+put 'query2and3_url', 'http://example.com/?url=004:2019-09-12:02', 'query2:count_unique_visitors', '3'
+put 'query2and3_url', 'http://example.com/?url=004:2019-09-12:02', 'query3:count_clicks', '3'
+
+put 'query2and3_url', 'http://example.com/?url=005:2019-09-12:02', 'query2:count_unique_visitors', '4'
+put 'query2and3_url', 'http://example.com/?url=005:2019-09-12:02', 'query3:count_clicks', '5'
+
+put 'query2and3_url', 'http://example.com/?url=006:2019-09-12:02', 'query2:count_unique_visitors', '10'
+put 'query2and3_url', 'http://example.com/?url=006:2019-09-12:02', 'query3:count_clicks', '10'
+
+get 'query2and3_url', 'http://example.com/?url=001:2019-09-12:00', {COLUMN => 'query2:count_unique_visitors'}
+get 'query2and3_url', 'http://example.com/?url=001:2019-09-12:00', {COLUMN => 'query3:count_clicks'}
+scan 'query2and3_url', {ROWPREFIXFILTER => 'http://example.com/?url=005', COLUMN => 'query2:count_unique_visitors'}
+scan 'query2and3_url', {ROWPREFIXFILTER => 'http://example.com/?url=005', COLUMN => 'query3:count_clicks'}
+scan 'query2and3_url', {STARTROW => 'http://example.com/?url=003', ENDROW => 'http://example.com/?url=005'}
+
+scan 'query2and3_url', { COLUMNS => 'cf:abc', FILTER => "ValueFilter(=, 'substring:myvalue')"}
+
+----------
+
+
+disable 'query4'
+drop 'query4'
+
+create 'query4','unique_clicks'
+
+put 'query4', '2019-09-13:17:AD', 'unique_clicks:country', 'AD'
+put 'query4', '2019-09-13:17:AD', 'unique_clicks:count', '2'
+
+put 'query4', '2019-09-13:17:AE', 'unique_clicks:country', 'AE'
+put 'query4', '2019-09-13:17:AE', 'unique_clicks:count', '6'
+
+put 'query4', '2019-09-13:17:AF', 'unique_clicks:country', 'AF'
+put 'query4', '2019-09-13:17:AF', 'unique_clicks:count', '1'
+
+put 'query4', '2019-09-14:05:AD', 'unique_clicks:country', 'AD'
+put 'query4', '2019-09-14:05:AD', 'unique_clicks:count', '2'
+
+put 'query4', '2019-09-14:08:GP', 'unique_clicks:country', 'GP'
+put 'query4', '2019-09-14:08:GP', 'unique_clicks:count', '1'
+
+scan 'query4', {FILTER=>"SingleColumnValueFilter('unique_clicks','country',=,'binary:AD')"}
+scan 'query4', {STARTROW => '2019-09-13:17', ENDROW => '2019-09-14:08'}
+scan 'query4', {STARTROW => '2019-09-13:17', ENDROW => '2019-09-14:08', FILTER=>"SingleColumnValueFilter('unique_clicks','country',=,'binary:AD')"}
+
+----------

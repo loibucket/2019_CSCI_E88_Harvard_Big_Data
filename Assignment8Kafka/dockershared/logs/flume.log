@@ -1,0 +1,150 @@
+24 Oct 2019 22:34:09,293 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.start:62)  - Configuration provider starting
+24 Oct 2019 22:34:09,301 INFO  [conf-file-poller-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider$FileWatcherRunnable.run:138)  - Reloading configuration file:/dockershared/flume-conf-filesink.properties
+24 Oct 2019 22:34:09,314 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:filesink
+24 Oct 2019 22:34:09,315 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+24 Oct 2019 22:34:09,316 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:filesink
+24 Oct 2019 22:34:09,317 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:fc
+24 Oct 2019 22:34:09,317 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:fc
+24 Oct 2019 22:34:09,318 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:loggerSink
+24 Oct 2019 22:34:09,318 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+24 Oct 2019 22:34:09,319 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1117)  - Added sinks: filesink Agent: a1
+24 Oct 2019 22:34:09,319 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:fc
+24 Oct 2019 22:34:09,320 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:filesink
+24 Oct 2019 22:34:09,330 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+24 Oct 2019 22:34:09,330 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+24 Oct 2019 22:34:09,331 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:fc
+24 Oct 2019 22:34:09,332 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+24 Oct 2019 22:34:09,334 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:filesink
+24 Oct 2019 22:34:09,335 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:filesink
+24 Oct 2019 22:34:09,336 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+24 Oct 2019 22:34:09,336 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:fc
+24 Oct 2019 22:34:09,337 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:loggerSink
+24 Oct 2019 22:34:09,337 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:filesink
+24 Oct 2019 22:34:09,338 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:filesink
+24 Oct 2019 22:34:09,338 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:filesink
+24 Oct 2019 22:34:09,339 WARN  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.validateConfigFilterSet:623)  - Agent configuration for 'a1' has no configfilters.
+24 Oct 2019 22:34:09,355 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:163)  - Post-validation flume configuration contains configuration for agents: [a1]
+24 Oct 2019 22:34:09,356 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:151)  - Creating channels
+24 Oct 2019 22:34:09,364 INFO  [conf-file-poller-0] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel fc type file
+24 Oct 2019 22:34:09,402 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:205)  - Created channel fc
+24 Oct 2019 22:34:09,404 INFO  [conf-file-poller-0] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source r1, type exec
+24 Oct 2019 22:34:09,424 INFO  [conf-file-poller-0] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: filesink, type: file_roll
+24 Oct 2019 22:34:09,431 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:120)  - Channel fc connected to [r1, filesink]
+24 Oct 2019 22:34:09,438 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:162)  - Starting new configuration:{ sourceRunners:{r1=EventDrivenSourceRunner: { source:org.apache.flume.source.ExecSource{name:r1,state:IDLE} }} sinkRunners:{filesink=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@ce6d0c4 counterGroup:{ name:null counters:{} } }} channels:{fc=FileChannel fc { dataDirs: [/dockershared/flume_data] }} }
+24 Oct 2019 22:34:09,439 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:169)  - Starting Channel fc
+24 Oct 2019 22:34:09,440 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.FileChannel.start:278)  - Starting FileChannel fc { dataDirs: [/dockershared/flume_data] }...
+24 Oct 2019 22:34:09,493 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: fc: Successfully registered new MBean.
+24 Oct 2019 22:34:09,494 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: fc started
+24 Oct 2019 22:34:09,513 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.Log.<init>:356)  - Encryption is not enabled
+24 Oct 2019 22:34:09,514 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.Log.replay:406)  - Replay started
+24 Oct 2019 22:34:09,550 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.Log.replay:418)  - Found NextFileID 6, from [/dockershared/flume_data/log-2, /dockershared/flume_data/log-5, /dockershared/flume_data/log-4, /dockershared/flume_data/log-3, /dockershared/flume_data/log-6, /dockershared/flume_data/log-1]
+24 Oct 2019 22:34:09,568 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.EventQueueBackingStoreFileV3.<init>:55)  - Starting up with /dockershared/flume_checkpoint/checkpoint and /dockershared/flume_checkpoint/checkpoint.meta
+24 Oct 2019 22:34:09,570 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.EventQueueBackingStoreFileV3.<init>:59)  - Reading checkpoint metadata from /dockershared/flume_checkpoint/checkpoint.meta
+24 Oct 2019 22:34:09,687 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.FlumeEventQueue.<init>:115)  - QueueSet population inserting 0 took 0
+24 Oct 2019 22:34:09,692 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.Log.replay:457)  - Last Checkpoint Thu Oct 24 22:33:52 GMT 2019, queue depth = 0
+24 Oct 2019 22:34:09,696 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.Log.doReplay:542)  - Replaying logs with v2 replay logic
+24 Oct 2019 22:34:09,700 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.ReplayHandler.replayLog:249)  - Starting replay of [/dockershared/flume_data/log-1, /dockershared/flume_data/log-2, /dockershared/flume_data/log-3, /dockershared/flume_data/log-4, /dockershared/flume_data/log-5, /dockershared/flume_data/log-6]
+24 Oct 2019 22:34:09,705 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.ReplayHandler.replayLog:262)  - Replaying /dockershared/flume_data/log-1
+24 Oct 2019 22:34:09,727 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.tools.DirectMemoryUtils.getDefaultDirectMemorySize:112)  - Unable to get maxDirectMemory from VM: NoSuchMethodException: sun.misc.VM.maxDirectMemory(null)
+24 Oct 2019 22:34:09,729 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.tools.DirectMemoryUtils.allocate:48)  - Direct Memory Allocation:  Allocation = 1048576, Allocated = 0, MaxDirectMemorySize = 18874368, Remaining = 18874368
+24 Oct 2019 22:34:09,804 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.skipToLastCheckpointPosition:658)  - fast-forward to checkpoint position: 530
+24 Oct 2019 22:34:09,807 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.next:683)  - Encountered EOF at 530 in /dockershared/flume_data/log-1
+24 Oct 2019 22:34:09,807 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.ReplayHandler.replayLog:262)  - Replaying /dockershared/flume_data/log-2
+24 Oct 2019 22:34:09,813 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.skipToLastCheckpointPosition:658)  - fast-forward to checkpoint position: 530
+24 Oct 2019 22:34:09,815 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.next:683)  - Encountered EOF at 530 in /dockershared/flume_data/log-2
+24 Oct 2019 22:34:09,816 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.ReplayHandler.replayLog:262)  - Replaying /dockershared/flume_data/log-3
+24 Oct 2019 22:34:09,821 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.skipToLastCheckpointPosition:658)  - fast-forward to checkpoint position: 530
+24 Oct 2019 22:34:09,823 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.next:683)  - Encountered EOF at 530 in /dockershared/flume_data/log-3
+24 Oct 2019 22:34:09,824 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.ReplayHandler.replayLog:262)  - Replaying /dockershared/flume_data/log-4
+24 Oct 2019 22:34:09,830 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.skipToLastCheckpointPosition:658)  - fast-forward to checkpoint position: 530
+24 Oct 2019 22:34:09,832 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.next:683)  - Encountered EOF at 530 in /dockershared/flume_data/log-4
+24 Oct 2019 22:34:09,833 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.ReplayHandler.replayLog:262)  - Replaying /dockershared/flume_data/log-5
+24 Oct 2019 22:34:09,838 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.skipToLastCheckpointPosition:658)  - fast-forward to checkpoint position: 530
+24 Oct 2019 22:34:09,840 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.next:683)  - Encountered EOF at 530 in /dockershared/flume_data/log-5
+24 Oct 2019 22:34:09,841 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.ReplayHandler.replayLog:262)  - Replaying /dockershared/flume_data/log-6
+24 Oct 2019 22:34:09,849 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.skipToLastCheckpointPosition:658)  - fast-forward to checkpoint position: 530
+24 Oct 2019 22:34:09,851 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$SequentialReader.next:683)  - Encountered EOF at 530 in /dockershared/flume_data/log-6
+24 Oct 2019 22:34:09,852 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.ReplayHandler.replayLog:345)  - read: 0, put: 0, take: 0, rollback: 0, commit: 0, skip: 0, eventCount:0
+24 Oct 2019 22:34:09,853 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.FlumeEventQueue.replayComplete:417)  - Search Count = 0, Search Time = 0, Copy Count = 0, Copy Time = 0
+24 Oct 2019 22:34:09,861 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.Log.replay:505)  - Rolling /dockershared/flume_data
+24 Oct 2019 22:34:09,862 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.Log.roll:990)  - Roll start /dockershared/flume_data
+24 Oct 2019 22:34:09,868 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.LogFile$Writer.<init>:220)  - Opened /dockershared/flume_data/log-7
+24 Oct 2019 22:34:09,885 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.Log.roll:1006)  - Roll end
+24 Oct 2019 22:34:09,887 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.EventQueueBackingStoreFile.beginCheckpoint:230)  - Start checkpoint for /dockershared/flume_checkpoint/checkpoint, elements to sync = 0
+24 Oct 2019 22:34:09,896 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.EventQueueBackingStoreFile.checkpoint:255)  - Updating checkpoint metadata: logWriteOrderID: 1571956449583, queueSize: 0, queueHead: 0
+24 Oct 2019 22:34:09,924 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.Log.writeCheckpoint:1065)  - Updated checkpoint for file: /dockershared/flume_data/log-7 position: 0 logWriteOrderID: 1571956449583
+24 Oct 2019 22:34:09,925 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.FileChannel.start:289)  - Queue Size after replay: 0 [channel=fc]
+24 Oct 2019 22:34:09,926 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:196)  - Starting Sink filesink
+24 Oct 2019 22:34:09,927 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.sink.RollingFileSink.start:111)  - Starting org.apache.flume.sink.RollingFileSink{name:filesink, channel:fc}...
+24 Oct 2019 22:34:09,927 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:207)  - Starting Source r1
+24 Oct 2019 22:34:09,928 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SINK, name: filesink: Successfully registered new MBean.
+24 Oct 2019 22:34:09,932 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SINK, name: filesink started
+24 Oct 2019 22:34:09,931 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.source.ExecSource.start:170)  - Exec source starting with command: tail -F /var/log/apache2/access.log
+24 Oct 2019 22:34:09,933 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SOURCE, name: r1: Successfully registered new MBean.
+24 Oct 2019 22:34:09,934 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SOURCE, name: r1 started
+24 Oct 2019 22:34:09,933 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.sink.RollingFileSink.start:143)  - RollingFileSink filesink started.
+24 Oct 2019 22:34:23,624 INFO  [pool-5-thread-1] (org.apache.flume.source.ExecSource$ExecRunnable.run:379)  - Command [tail -F /var/log/apache2/access.log] exited with 130
+24 Oct 2019 22:34:23,626 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:125)  - Shutting down configuration: { sourceRunners:{r1=EventDrivenSourceRunner: { source:org.apache.flume.source.ExecSource{name:r1,state:START} }} sinkRunners:{filesink=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@ce6d0c4 counterGroup:{ name:null counters:{runner.backoffs.consecutive=5, runner.backoffs=5} } }} channels:{fc=FileChannel fc { dataDirs: [/dockershared/flume_data] }} }
+24 Oct 2019 22:34:23,626 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:129)  - Stopping Source r1
+24 Oct 2019 22:34:23,627 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: EventDrivenSourceRunner: { source:org.apache.flume.source.ExecSource{name:r1,state:START} }
+24 Oct 2019 22:34:23,628 INFO  [agent-shutdown-hook] (org.apache.flume.source.ExecSource.stop:190)  - Stopping exec source with command: tail -F /var/log/apache2/access.log
+24 Oct 2019 22:34:23,629 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SOURCE, name: r1 stopped
+24 Oct 2019 22:34:23,630 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SOURCE, name: r1. source.start.time == 1571956449934
+24 Oct 2019 22:34:23,630 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SOURCE, name: r1. source.stop.time == 1571956463629
+24 Oct 2019 22:34:23,631 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.append-batch.accepted == 0
+24 Oct 2019 22:34:23,632 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.append-batch.received == 0
+24 Oct 2019 22:34:23,633 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.append.accepted == 0
+24 Oct 2019 22:34:23,634 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.append.received == 0
+24 Oct 2019 22:34:23,634 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.channel.write.fail == 0
+24 Oct 2019 22:34:23,635 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.event.read.fail == 0
+24 Oct 2019 22:34:23,635 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.events.accepted == 2
+24 Oct 2019 22:34:23,636 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.events.received == 2
+24 Oct 2019 22:34:23,636 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.generic.processing.fail == 0
+24 Oct 2019 22:34:23,637 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.open-connection.count == 0
+24 Oct 2019 22:34:23,637 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:139)  - Stopping Sink filesink
+24 Oct 2019 22:34:23,638 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@ce6d0c4 counterGroup:{ name:null counters:{runner.backoffs.consecutive=5, runner.backoffs=5} } }
+24 Oct 2019 22:34:23,639 INFO  [agent-shutdown-hook] (org.apache.flume.sink.RollingFileSink.stop:236)  - RollingFile sink filesink stopping...
+24 Oct 2019 22:34:23,640 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SINK, name: filesink stopped
+24 Oct 2019 22:34:23,641 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SINK, name: filesink. sink.start.time == 1571956449932
+24 Oct 2019 22:34:23,641 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SINK, name: filesink. sink.stop.time == 1571956463640
+24 Oct 2019 22:34:23,642 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.batch.complete == 0
+24 Oct 2019 22:34:23,643 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.batch.empty == 0
+24 Oct 2019 22:34:23,643 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.batch.underflow == 0
+24 Oct 2019 22:34:23,644 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.channel.read.fail == 0
+24 Oct 2019 22:34:23,644 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.connection.closed.count == 1
+24 Oct 2019 22:34:23,645 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.connection.creation.count == 2
+24 Oct 2019 22:34:23,645 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.connection.failed.count == 0
+24 Oct 2019 22:34:23,646 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.event.drain.attempt == 2
+24 Oct 2019 22:34:23,646 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.event.drain.sucess == 2
+24 Oct 2019 22:34:23,647 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: filesink. sink.event.write.fail == 0
+24 Oct 2019 22:34:23,649 INFO  [agent-shutdown-hook] (org.apache.flume.sink.RollingFileSink.stop:268)  - RollingFile sink filesink stopped. Event metrics: SINK:filesink{sink.batch.underflow=0, sink.event.write.fail=0, sink.connection.failed.count=0, sink.channel.read.fail=0, sink.connection.closed.count=2, sink.event.drain.attempt=2, sink.batch.complete=0, sink.event.drain.sucess=2, sink.connection.creation.count=2, sink.batch.empty=0}
+24 Oct 2019 22:34:23,650 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:149)  - Stopping Channel fc
+24 Oct 2019 22:34:23,651 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: FileChannel fc { dataDirs: [/dockershared/flume_data] }
+24 Oct 2019 22:34:23,651 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.FileChannel.stop:334)  - Stopping FileChannel fc { dataDirs: [/dockershared/flume_data] }...
+24 Oct 2019 22:34:23,653 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.EventQueueBackingStoreFile.beginCheckpoint:230)  - Start checkpoint for /dockershared/flume_checkpoint/checkpoint, elements to sync = 2
+24 Oct 2019 22:34:23,661 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.EventQueueBackingStoreFile.checkpoint:255)  - Updating checkpoint metadata: logWriteOrderID: 1571956449590, queueSize: 0, queueHead: 0
+24 Oct 2019 22:34:23,675 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.Log.writeCheckpoint:1065)  - Updated checkpoint for file: /dockershared/flume_data/log-7 position: 530 logWriteOrderID: 1571956449590
+24 Oct 2019 22:34:23,676 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.Log.shutdownWorker:881)  - Attempting to shutdown background worker.
+24 Oct 2019 22:34:23,678 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.LogFile$Writer.close:384)  - Closing /dockershared/flume_data/log-7
+24 Oct 2019 22:34:23,680 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.LogFile$RandomReader.close:520)  - Closing RandomReader /dockershared/flume_data/log-1
+24 Oct 2019 22:34:23,687 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.LogFile$RandomReader.close:520)  - Closing RandomReader /dockershared/flume_data/log-2
+24 Oct 2019 22:34:23,693 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.LogFile$RandomReader.close:520)  - Closing RandomReader /dockershared/flume_data/log-3
+24 Oct 2019 22:34:23,700 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.LogFile$RandomReader.close:520)  - Closing RandomReader /dockershared/flume_data/log-4
+24 Oct 2019 22:34:23,707 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.LogFile$RandomReader.close:520)  - Closing RandomReader /dockershared/flume_data/log-5
+24 Oct 2019 22:34:23,713 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.LogFile$RandomReader.close:520)  - Closing RandomReader /dockershared/flume_data/log-6
+24 Oct 2019 22:34:23,721 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.LogFile$RandomReader.close:520)  - Closing RandomReader /dockershared/flume_data/log-7
+24 Oct 2019 22:34:23,731 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: CHANNEL, name: fc stopped
+24 Oct 2019 22:34:23,732 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: CHANNEL, name: fc. channel.start.time == 1571956449494
+24 Oct 2019 22:34:23,732 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: CHANNEL, name: fc. channel.stop.time == 1571956463731
+24 Oct 2019 22:34:23,733 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.capacity == 100
+24 Oct 2019 22:34:23,733 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.current.size == 0
+24 Oct 2019 22:34:23,734 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.event.put.attempt == 2
+24 Oct 2019 22:34:23,734 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.event.put.success == 2
+24 Oct 2019 22:34:23,735 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.event.take.attempt == 7
+24 Oct 2019 22:34:23,736 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.event.take.success == 2
+24 Oct 2019 22:34:23,736 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.file.checkpoint.backup.write.error == 0
+24 Oct 2019 22:34:23,737 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.file.checkpoint.write.error == 0
+24 Oct 2019 22:34:23,737 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.file.event.put.error == 0
+24 Oct 2019 22:34:23,738 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: fc. channel.file.event.take.error == 0
+24 Oct 2019 22:34:23,739 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 11
+24 Oct 2019 22:34:23,741 INFO  [agent-shutdown-hook] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.stop:84)  - Configuration provider stopping
